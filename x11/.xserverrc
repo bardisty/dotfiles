@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+#
+#         dP.  .dP .d8888b. .d8888b. 88d888b. dP   .dP .d8888b. 88d888b.
+#          `8bd8'  Y8ooooo. 88ooood8 88'  `88 88   d8' 88ooood8 88'  `88
+#          .d88b.        88 88.  ... 88       88 .88'  88.  ... 88
+# ╔══════ dP'  `dP `88888P' `88888P' dP       8888P'   `88888P' dP ════════════╗
+# ║:::::::..::::..::......:::......::..:::::::.....:::::......::..:::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ╠════════════════════════════════════════════════════════════════════════════╣
+# ║     file │ ~/.xserverrc                                                    ║
+# ║     desc │ X Window System display server                                  ║
+# ║   author │ bardisty <b@bah.im>                                             ║
+# ║   source │ https://github.com/bardisty/dotfiles                            ║
+# ║ modified │ Thu Aug 25 2016 06:02:58 PDT -0700                              ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+
+# Start X server
+#     `-nolisten tcp`.......Disable TCP/IP connections
+#     `vt"$XDG_VTNR"........Start X on the same virtual terminal where login
+#                           occurred (maintains an authenticated session
+#                           with `logind` and prevents bypassing the screen
+#                           locker by switching terminals)⁽¹⁾
+#
+# 1. https://wiki.archlinux.org/index.php/Start_X_at_Login#xserverrc
+exec /usr/bin/X -nolisten tcp "$@" vt"$XDG_VTNR"
