@@ -1,18 +1,18 @@
 # dotfiles
 
-> Linux config files
+> Linux config files (GnuPG, mpv, X11)
 
 ## Quickstart
 
-1.  Clone the repository into your home directory:
+1. Clone the repository into your home directory:
 
-    `git clone https://github.com/bardisty/dotfiles ~/dotfiles`
+   `git clone https://github.com/bardisty/dotfiles ~/dotfiles`
 
--   `cd` into the repository:
+2. `cd` into the repository:
 
-    `cd ~/dotfiles`
+   `cd ~/dotfiles`
 
--   Use [GNU Stow](https://www.gnu.org/software/stow/) to create and manage
-    the required symlinks:
+3. Use [GNU Stow](https://www.gnu.org/software/stow/) to create and manage
+   the required symlinks:
 
-    `stow <directory>` e.g., `stow mpv`
+   `stow <directory>` e.g., `stow mpv`
