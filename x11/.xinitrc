@@ -221,7 +221,7 @@
     if_cmd_exists dropbox &
 
 
-    # Network Manager systray applet
+    # Network Manager systray applet {{{2
     if_cmd_exists nm-applet &
 
 
