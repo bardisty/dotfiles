@@ -101,8 +101,8 @@
 
     # Ensure $PATH is set for any commands or scripts invoked before
     # `~/.zshenv` is sourced (again)
-    PATH_SCRIPT="${HOME}/bin/path.sh"
-    # shellcheck source=/home/bah/bin/path.sh
+    PATH_SCRIPT="${HOME}/.path"
+    # shellcheck source=/home/bah/.path
     [ -f "$PATH_SCRIPT" ] && . "$PATH_SCRIPT"
 
 
