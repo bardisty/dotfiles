@@ -24,4 +24,5 @@ the same shader twice:
 vo=opengl-hq:...:user-shaders="~~/shaders/superxbr--all--1.3-sharpness.hook,~~/shaders/superxbr--all--1.3-sharpness.hook"
 ```
 
-See the `mpv-prescalers` repository for more info.
+See the [bjin/mpv-prescalers](https://github.com/bjin/mpv-prescalers)
+repository for more info.
