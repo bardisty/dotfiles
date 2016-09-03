@@ -86,8 +86,8 @@ super + Return
 ctrl + space
   rofi -show run
 
-{alt,mod4} + Tab
 # Rofi; list windows
+{alt,mod4} + Tab
   rofi -show window
 
 # Rofi; ssh hosts
