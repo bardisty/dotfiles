@@ -1,0 +1,55 @@
+---
+#                   dP                           dP
+#                   88                           88
+#                   88d888b. .d8888b. .d8888b. d8888P .d8888b.
+#                   88'  `88 88ooood8 88ooood8   88   Y8ooooo.
+#                   88.  .88 88.  ... 88.  ...   88         88
+# ╔════════════════ 88Y8888' `88888P' `88888P'   dP   `88888P' ════════════════╗
+# ║:::::::::::::::::.......:::......:::......::::..::::......::::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ╠════════════════════════════════════════════════════════════════════════════╣
+# ║     file │ ~/.config/beets/config.yaml                                     ║
+# ║     desc │ beet(1) configuration - music tagger and library organizer      ║
+# ║   author │ bardisty <b@bah.im>                                             ║
+# ║   source │ https://github.com/bardisty/dotfiles                            ║
+# ║ modified │ Thu Jun 16 2016 11:21:36 PDT -0700                              ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+
+library: ~/var/beets.blb
+directory: ~/usr/msc
+plugins: info fetchart lastgenre chroma mbsync embedart scrub zero
+         ftintitle play random missing duplicates
+pluginpath: ~/etc/beets/.config/beets/plugins
+ignore: .AppleDouble ._* *~ .DS_Store
+replace:
+  '[\\/]': --
+  '[\x00-\x1f]': --
+  '[<>"\*\|]': --
+  ':': ' --'
+  '\?': ''
+  '\s+$': ''
+  '^\s+': ''
+threaded: yes
+ui:
+  color: yes
+  colors:
+    text_success: green
+    text_warning: yellow
+    text_error: red
+    text_highlight: red
+    text_highlight_minor: lightgray
+    action_default: turquoise
+    action: blue
+log: ~/var/log/beets.log
+paths:
+  default: $albumartist/$album%aunique{} ($year)/$track $title
+  singleton: Non-Album/$artist - $title ($year)
+  comp: Compilations/$album%aunique{}/$track $title
+  albumtype:soundtrack: Soundtracks/$album%aunique{} ($year)/$track $title
+zero:
+  fields: comments
+  comments: [EAC, LAME, from.+collection, 'ripped by']
+lyrics:
+  fallback: 'No lyrics found'
