@@ -1,0 +1,189 @@
+# vim:fdm=marker:
+#
+#                                    dP       dP             dP
+#                                    88       88             88
+#                  .d8888b. dP.  .dP 88d888b. 88  .dP  .d888b88
+#                  Y8ooooo.  `8bd8'  88'  `88 88888"   88'  `88
+#                        88  .d88b.  88    88 88  `8b. 88.  .88
+# ╔═══════════════ `88888P' dP'  `dP dP    dP dP   `YP `88888P8 ═══════════════╗
+# ║:::::::::::::::::......::..::::..:..::::..:..::::..::.......::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ╠════════════════════════════════════════════════════════════════════════════╣
+# ║     file │ ~/.config/sxhkd/sxhkdrc                                         ║
+# ║     desc │ sxhkd(1) configuration - simple X hotkey daemon                 ║
+# ║   author │ bardisty <b@bah.im>                                             ║
+# ║   source │ https://github.com/bardisty/dotfiles                            ║
+# ║ modified │ Tue Aug 30 2016 13:48:58 PDT -0700                              ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+
+# Contents {{{1                                                       :contents:
+# _____________
+
+
+    # 1 Global            :global:
+    # 2 i3                :i3:
+
+
+    # 1 Global            :global:
+    #
+    #     `super + Escape`............Reload sxhkd config
+    #     `super + Return`............Terminal
+    #     `ctrl + space`..............Rofi
+    #     `{alt,mod4} + Tab`..........Rofi; list windows
+    #     `mod4 + shift + s`..........Rofi; ssh hosts
+    #     `ctrl + alt + b`............Buku bookmark manager
+    #     `mod4 {_,+ shift} + p`......pass(1) dmenu(1) script
+    #     `mod4 + shift + a`..........KeePass global auto-type
+    #     `ctrl + Print`..............Take screenshot (left monitor)
+    #     `mod4 + Print`..............Take screenshot (top monitor)
+    #     `alt + Print`...............Take screenshot (right monitor)
+    #     `ctrl + alt + p`............Take screenshot of focused window
+    #     `mod4 + alt + p`............Take screenshot of clicked window
+    #
+    #
+    # 2 i3                :i3:
+    #
+    #     Change focus / move focused window
+    #     `mod4 + {_,shift +}{h,j,k,l}`
+    #     `mod4 + {_,shift +}{Left,Down,Up,Right}`
+    #
+    #     `mod4 + shift + q`..........Kill focused window
+    #     `mod4 + {b,v}`..............Split in horizontal/vertical orientation
+    #     `mod4 + f`..................Fullscreen the focused container
+    #     `mod4 + {s,t,e}`............Change container layout
+    #     `mod4 + shift + space`......Toggle window floating
+    #     `mod4 + space`..............Change focus between tiling and
+    #                                 floating windows
+    #     `mod4 + a`..................Focus parent container
+    #     `mod4 + m`..................'minimize' / move windows to scratchpad
+    #     `mod4 + shift + m`..........Cycle through 'minimized' windows
+    #     `mod4 + shift + c`..........i3; reload config
+    #     `mod4 + shift + r`..........i3; restart i3 in-place
+    #     `mod4 + shift + e`..........i3; exit (ends X session)
+
+
+
+
+
+
+
+
+# 1 Global {{{1                                                         :global:
+# =============
+
+
+# Reload sxhkd config
+super + Escape
+  pkill -USR1 -x sxhkd
+
+# Terminal
+super + Return
+  urxvtc
+
+# Rofi
+ctrl + space
+  rofi -show run
+
+{alt,mod4} + Tab
+# Rofi; list windows
+  rofi -show window
+
+# Rofi; ssh hosts
+ctrl + alt + s
+  rofi -show ssh
+
+# Buku bookmark manager; rofi frontend
+ctrl + alt + b
+  buku_run
+
+# pass(1) dmenu(1) script (modified for rofi)
+mod4 {_,+ shift} + p
+  "$HOME"/bin/passmenu.rofi {_,--type}
+
+# KeePass global auto-type
+mod4 + shift + a
+  mono /usr/share/keepass/KeePass.exe --auto-type
+
+# Take screenshots
+ctrl + Print
+  "$HOME"/bin/screenshot left
+mod4 + Print
+  "$HOME"/bin/screenshot top
+alt + Print
+  "$HOME"/bin/screenshot right
+
+# Take screenshot of focused window
+ctrl + alt + p
+  ffcast -q -# "$(xdotool getwindowfocus)" pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
+
+# Take screenshot of clicked window
+mod4 + alt + p
+  ffcast -qfw pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
+
+
+
+
+
+
+
+
+# i3 {{{1                                                                   :i3:
+# =======
+
+
+# Change focus / move focused window
+mod4 + {_,shift +}{h,j,k,l}
+  i3-msg {focus,move} {left,down,up,right}
+mod4 + {_,shift +}{Left,Down,Up,Right}
+  i3-msg {focus,move} {left,down,up,right}
+
+# Kill focused window
+mod4 + shift + q
+  i3-msg kill
+
+# Split in horizontal/vertical orientation
+mod4 + {b,v}
+  i3-msg split {h,v}
+
+# Enter fullscreen mode for the focused container
+mod4 + f
+  i3-msg fullscreen
+
+# Change container layout (stacked, tabbed, toggle split)
+mod4 + {s,t,e}
+  i3-msg layout {stacked, tabbed, toggle split}
+
+# Toggle window floating
+mod4 + shift + space
+  i3-msg floating toggle
+
+# Change focus between tiling and floating windows
+mod4 + space
+  i3-msg focus mode_toggle
+
+# Focus parent container
+mod4 + a
+  i3-msg focus parent
+
+# 'Minimize' / move windows to scratchpad
+mod4 + m
+  i3-msg move scratchpad
+
+# Cycle through 'minimized' windows
+mod4 + shift + m
+  i3-msg scratchpad show
+
+# i3; reload config
+mod4 + shift + c
+  i3-msg reload
+
+# i3; restart i3 in-place (preserves layout/session)
+mod4 + shift + r
+  i3-msg restart
+
+# i3; exit (ends X session)
+mod4 + shift + e
+  i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'
+
