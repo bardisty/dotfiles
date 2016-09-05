@@ -1,6 +1,6 @@
 # dotfiles
 
-> Linux config files (beets, cmus, GnuPG, mpv, sxhkd, X11)
+> Linux config files (beets, cmus, GnuPG, mpv, ranger, sxhkd, X11)
 
 ## Quickstart
 
