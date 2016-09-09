@@ -1,0 +1,324 @@
+# vim:fdm=marker:
+# i3 config file (v4)
+#
+#                                   oo d8888b.
+#                                          `88
+#                                   dP  aaad8'
+#                                   88     `88
+#                                   88     .88
+# ╔════════════════════════════════ dP d88888' ════════════════════════════════╗
+# ║:::::::::::::::::::::::::::::::::..:.......:::::::::::::::::::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
+# ╠════════════════════════════════════════════════════════════════════════════╣
+# ║     file │ ~/.config/i3/config                                             ║
+# ║     desc │ i3(1) window manager configuration (Airblader fork; gaps-next)  ║
+# ║   author │ bardisty <b@bah.im>                                             ║
+# ║   source │ https://github.com/bardisty/dotfiles                            ║
+# ║ modified │ Thu Sep 08 2016 23:09:54 PDT -0700                              ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+
+# Contents {{{1                                                       :contents:
+# _____________
+
+
+    # 1 General                   :general:
+    # 2 Colors                    :colors:
+    # 3 Gaps                      :gaps:
+    # 4 Resize Window             :resize-window:
+    # 5 Status Bar                :status-bar:
+    # 6 Window Rules              :window-rules:
+    # 7 Workspaces                :workspaces:
+
+
+
+
+
+
+
+
+# 1 General {{{1                                                       :general:
+# ==============
+
+
+    # Set modifier key
+    set $mod Mod4
+
+    # Monitors
+    #     * Values are from `xrandr` output
+    set $monitor_left  DVI-I-0
+    set $monitor_top   HDMI-0
+    set $monitor_right DP-0
+
+    # Use Mouse+$mod to drag floating windows to their wanted position
+    floating_modifier $mod
+
+    # Don't let the mouse focus any windows
+    focus_follows_mouse no
+
+    # Font for window titles
+    #     * Will also be used by the status bar unless a different font is
+    #       used in the `bar {}` block
+    font pango:GohuFont 14px
+
+    # Set window border size
+    for_window [class="^.*"] border pixel 2
+
+    # Disable mouse warping
+    mouse_warping none
+
+    # Disable window titles
+    new_window none
+
+
+
+
+
+
+
+
+# 2 Colors {{{1                                                         :colors:
+# =============
+
+
+    # Gruvbox color scheme
+    # https://github.com/morhetz/gruvbox
+    set $foreground #ebdbb2
+    set $foreground_soft #d5c5a1
+
+    set $background #282828
+
+    set $black_dark #282828
+    set $black_light #928374
+
+    set $red_dark #cc241d
+    set $red_light #fb4934
+
+    set $green_dark #98971a
+    set $green_light #b8bb2g
+
+    set $yellow_dark #d79921
+    set $yellow_light #fabd2f
+
+    set $blue_dark #458588
+    set $blue_light #83a598
+
+    set $magenta_dark #b16286
+    set $magenta_light #d3869b
+
+    set $cyan_dark #689d6a
+    set $cyan_light #8ec07c
+
+    set $white_dark #a89984
+    set $white_light #ebdbb2
+
+
+    # Window border / tab colors
+    # class                 border      background  text        indicator
+    client.focused          $background $white_dark $foreground $white_dark
+    client.focused_inactive $background $background $foreground $background
+    client.unfocused        $background $background $foreground $background
+    client.urgent           $background $red_light  $foreground $red_light
+    client.background       $background
+
+
+
+
+
+
+
+
+# 3 Gaps {{{1                                                             :gaps:
+# ===========
+
+
+    gaps inner 30
+    gaps outer 100
+
+    # Change inner and outer gap sizes easily
+    set $mode_gaps Gaps: (o) outer, (i) inner
+    set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+    set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+    bindsym $mod+Shift+g mode "$mode_gaps"
+
+    mode "$mode_gaps" {
+       bindsym i      mode "$mode_gaps_inner"
+       bindsym o      mode "$mode_gaps_outer"
+       bindsym Return mode "default"
+       bindsym Escape mode "default"
+    }
+
+    mode "$mode_gaps_inner" {
+      bindsym plus  gaps inner current plus  5
+      bindsym minus gaps inner current minus 5
+      bindsym 0     gaps inner current set   0
+
+      bindsym Shift+plus  gaps inner all plus  5
+      bindsym Shift+minus gaps inner all minus 5
+      bindsym Shift+0     gaps inner all set   0
+
+      bindsym Return mode "default"
+      bindsym Escape mode "default"
+    }
+
+    mode "$mode_gaps_outer" {
+      bindsym plus  gaps outer current plus  5
+      bindsym minus gaps outer current minus 5
+      bindsym 0     gaps outer current set   0
+
+      bindsym Shift+plus  gaps outer all plus  5
+      bindsym Shift+minus gaps outer all minus 5
+      bindsym Shift+0     gaps outer all set   0
+
+      bindsym Return mode "default"
+      bindsym Escape mode "default"
+    }
+
+
+
+
+
+
+
+
+# 4 Resize Window {{{1                                           :resize-window:
+# ====================
+
+
+    bindsym $mod+r mode "resize"
+
+    mode "resize" {
+      # h/left....decrease window width
+      bindsym h     resize shrink width  25 px or 3 ppt
+      bindsym Left  resize shrink width  25 px or 3 ppt
+
+      # l/right...increase window width
+      bindsym l     resize grow   width  25 px or 3 ppt
+      bindsym Right resize grow   width  25 px or 3 ppt
+
+      # k/up......decrease window height
+      bindsym k     resize shrink height 25 px or 3 ppt
+      bindsym Up    resize shrink height 25 px or 3 ppt
+
+      # j/down....increase window height
+      bindsym j     resize grow   height 25 px or 3 ppt
+      bindsym Down  resize grow   height 25 px or 3 ppt
+
+      # Back to normal
+      bindsym Return mode "default"
+      bindsym Escape mode "default"
+    }
+
+
+
+
+
+
+
+
+# 5 Status Bar {{{1                                                 :status-bar:
+# =================
+
+
+    bar {
+      height 26
+      mode dock
+      #status_command i3status -c ~/.config/i3/status.conf
+      status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks -c ~/.config/i3blocks/config 2>~/var/log/error/i3blocks.log
+      position top
+      tray_output $monitor_right
+      font pango: GohuFont, FontAwesome 14px
+      workspace_buttons yes
+
+      bindsym button4 exec --no-startup-id i3-msg workspace $ws1;workspace $ws4;workspace $ws7
+      bindsym button5 exec --no-startup-id i3-msg workspace $ws2;workspace $ws5;workspace $ws8
+
+      colors {
+        background $background
+        statusline $foreground_soft
+        separator  $background
+
+        focused_workspace  $background $background $foreground
+        active_workspace   $background $background $white_dark
+        inactive_workspace $background $background $black_light
+        urgent_workspace   $background $background $red_light
+      }
+    }
+
+
+
+
+
+
+
+
+# 6 Window Rules {{{1                                             :window-rules:
+# ===================
+
+
+    # Set default window mode to float
+    for_window [class="(?i)teamviewer|(?i)gifview|(?i)gource|(?i)viewnior|(?i)feh|(?i)mplayer|(?i)mpv|(?i)steam|(?i)gsimplecal"] floating enable
+
+    # Force floating mode for dialogs
+    for_window [window_role="pop-up|task_dialog"] floating enable
+
+
+
+
+
+
+
+
+# 7 Workspaces {{{1                                                 :workspaces:
+# =================
+
+
+    # Workspace aliases
+    set $ws1 1
+    set $ws2 2
+    set $ws3 3
+    set $ws4 4
+    set $ws5 5
+    set $ws6 6
+    set $ws7 7
+    set $ws8 8
+    set $ws9 9
+    set $ws10 10
+
+    # Assign certain workspaces to certain monitors
+    workspace $ws1 output $monitor_left
+    workspace $ws2 output $monitor_left
+    workspace $ws3 output $monitor_left
+    workspace $ws4 output $monitor_top
+    workspace $ws5 output $monitor_top
+    workspace $ws6 output $monitor_top
+    workspace $ws7 output $monitor_right
+    workspace $ws8 output $monitor_right
+    workspace $ws9 output $monitor_right
+    workspace $ws10 output $monitor_right
+
+    # Switch to workspace
+    bindsym $mod+1 workspace $ws1
+    bindsym $mod+2 workspace $ws2
+    bindsym $mod+3 workspace $ws3
+    bindsym $mod+4 workspace $ws4
+    bindsym $mod+5 workspace $ws5
+    bindsym $mod+6 workspace $ws6
+    bindsym $mod+7 workspace $ws7
+    bindsym $mod+8 workspace $ws8
+    bindsym $mod+9 workspace $ws9
+    bindsym $mod+0 workspace $ws10
+
+    # Move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace $ws1
+    bindsym $mod+Shift+2 move container to workspace $ws2
+    bindsym $mod+Shift+3 move container to workspace $ws3
+    bindsym $mod+Shift+4 move container to workspace $ws4
+    bindsym $mod+Shift+5 move container to workspace $ws5
+    bindsym $mod+Shift+6 move container to workspace $ws6
+    bindsym $mod+Shift+7 move container to workspace $ws7
+    bindsym $mod+Shift+8 move container to workspace $ws8
+    bindsym $mod+Shift+9 move container to workspace $ws9
+    bindsym $mod+Shift+0 move container to workspace $ws10
+
