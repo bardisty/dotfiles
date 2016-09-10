@@ -258,7 +258,7 @@
 
 
     # Set default window mode to float
-    for_window [class="(?i)teamviewer|(?i)gifview|(?i)gource|(?i)viewnior|(?i)feh|(?i)mplayer|(?i)mpv|(?i)steam|(?i)gsimplecal"] floating enable
+    for_window [class="(?i)viewnior|(?i)feh|(?i)mplayer|(?i)mpv|(?i)steam|(?i)gsimplecal"] floating enable
 
     # Force floating mode for dialogs
     for_window [window_role="pop-up|task_dialog"] floating enable
