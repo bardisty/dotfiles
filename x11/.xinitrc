@@ -15,7 +15,7 @@
 # ║     desc │ X Window System initializer                                     ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Fri Aug 26 2016 14:01:55 PDT -0700                              ║
+# ║ modified │ Thu Sep 15 2016 15:59:01 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -209,6 +209,12 @@
         return 127
       fi
     }
+
+
+    # autoup -- automatically upload files created in a directory {{{2
+    # gopher://z3bra.org/notes -> uploadir
+    AUTOUP="${HOME}/bin/autoup"
+    [ -f "$AUTOUP" ] && "$AUTOUP" &
 
 
     # compton -- composite manager {{{2
