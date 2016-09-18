@@ -15,7 +15,7 @@
 # ║     desc │ X Window System initializer                                     ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Thu Sep 15 2016 15:59:01 PDT -0700                              ║
+# ║ modified │ Sun Sep 18 2016 06:57:43 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -103,7 +103,7 @@
     # `~/.zshenv` is sourced (again)
     PATH_SCRIPT="${HOME}/.path"
     # shellcheck source=/home/bah/.path
-    [ -f "$PATH_SCRIPT" ] && . "$PATH_SCRIPT"
+    [ -x "$PATH_SCRIPT" ] && . "$PATH_SCRIPT"
 
 
 
@@ -141,7 +141,7 @@
 
     # Set wallpaper with feh(1) {{{2
     FEHBG="${HOME}/.fehbg"
-    [ -f "$FEHBG" ] && sh "$FEHBG" &
+    [ -x "$FEHBG" ] && sh "$FEHBG" &
 
 
 
@@ -214,7 +214,7 @@
     # autoup -- automatically upload files created in a directory {{{2
     # gopher://z3bra.org/notes -> uploadir
     AUTOUP="${HOME}/bin/autoup"
-    [ -f "$AUTOUP" ] && "$AUTOUP" &
+    [ -x "$AUTOUP" ] && "$AUTOUP" &
 
 
     # compton -- composite manager {{{2
@@ -239,7 +239,7 @@
     # thyme -- track which applications you use and for how long {{{2
     # https://github.com/sourcegraph/thyme
     THYME="${HOME}/bin/thyme.sh"
-    [ -f "$THYME" ] && "$THYME" &
+    [ -x "$THYME" ] && "$THYME" &
 
 
     # urxvt daemon (for use with urxvtc) {{{2
