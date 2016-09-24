@@ -1,0 +1,210 @@
+! vim:fdm=marker:
+!
+!      o    o
+!      'b  d'
+!       'bd'   oPYo. .oPYo. .oPYo. .oPYo. o    o oPYo. .oPYo. .oPYo. .oPYo.
+!       .PY.   8  `' 8oooo8 Yb..   8    8 8    8 8  `' 8    ` 8oooo8 Yb..
+!      .P  Y.  8     8.       'Yb. 8    8 8    8 8     8    . 8.       'Yb.
+! .-- .P    Y. 9     `Yooo' `YooP' `YooP' 'YooP' 8     `YooP' `Yooo' `YooP' ---.
+! |:::..::::..:..:::::.....::.....::.....::.....:..:::::.....::.....::.....::::|
+! |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+! |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+! |----------------------------------------------------------------------------|
+! |     file | ~/.Xresources                                                   |
+! |     desc | Configuration parameters for X client applications              |
+! |   author | bardisty <b@bah.im>                                             |
+! |   source | https://github.com/bardisty/dotfiles                            |
+! | modified | Thu Sep 22 2016 23:26:57 PDT -0700                              |
+! '----------------------------------------------------------------------------'
+
+
+! Contents {{{1                                                       :contents:
+! _____________
+
+
+!   1 Rofi                    :rofi:
+!   2 URxvt                   :urxvt:
+!   .. 2.1 Colors                :urxvt:colors:
+!   .. 2.2 Cursor                :urxvt:cursor:
+!   .. 2.3 Extensions            :urxvt:extensions:
+!   .. 2.4 Text                  :urxvt:text:
+!   3 Xcursor                 :xcursor:
+!   4 Xft                     :xft:
+
+
+
+
+
+
+
+
+! 1 Rofi {{{1                                                             :rofi:
+! ===========
+
+
+!   rofi - A window switcher, run launcher, ssh dialog, and dmenu replacement
+!
+!   Run `rofi -dump-Xresources` for a list of rofi configuration directives.
+
+
+!   Gruvbox color scheme
+    #include "/home/bah/.Xresources.d/rofi/themes/gruvbox-dark.theme"
+
+!   Window opacity
+    rofi.opacity: 97
+
+!   Window width
+    rofi.width: 30
+
+!   Number of lines
+    rofi.lines: 12
+
+!   Number of columns
+    rofi.columns: 1
+
+!   Font to use
+    rofi.font: GohuFont 14
+
+!   Border width
+    rofi.bw: 2
+
+!   Padding
+    rofi.padding: 2
+
+!   Terminal to use
+    rofi.terminal: urxvt
+
+
+
+
+
+
+
+
+! 2 URxvt {{{1                                                           :urxvt:
+! ============
+
+
+!   rvxt-unicode - a VT102 emulator for the X window system
+
+
+!   Internal border of N pixels
+    URxvt*internalBorder: 8
+
+!   Number of lines to save in the scrollback buffer (default: 64)
+    URxvt*saveLines: 500000
+
+!   Disable the scrollbar
+    URxvt*scrollBar: false
+
+
+
+!   2.1 Colors {{{2                                               :urxvt:colors:
+!   ~~~~~~~~~~~~~~~
+
+!       Gruvbox color scheme
+!       https://github.com/morhetz/gruvbox
+        #include "/home/bah/.Xresources.d/urxvt/colors/gruvbox-dark.xresources"
+        #include "/home/bah/.Xresources.d/urxvt/colors/gruvbox-urxvt256.xresources"
+
+!       Color scheme overrides
+        *foreground: #bdae93
+
+!       Transparent background
+        URxvt*background: [97]#282828
+        URxvt*depth: 32
+
+
+
+!   2.2 Cursor {{{2                                               :urxvt:cursor:
+!   ~~~~~~~~~~~~~~~
+
+!       Blink the cursor
+        URxvt*cursorBlink: true
+
+!       Make the cursor a box
+        URxvt*cursorUnderline: false
+
+
+
+!   2.3 Extensions {{{2                                       :urxvt:extensions:
+!   ~~~~~~~~~~~~~~~~~~~
+
+!       Clickable URLs
+        URxvt*perl-ext-common: default,matcher
+        URxvt*url-launcher: /usr/bin/inox
+        URxvt*matcher.button: 1
+
+
+
+!   2.4 Text {{{2                                                   :urxvt:text:
+!   ~~~~~~~~~~~~~
+
+!       GohuFont
+!       http://font.gohu.org/
+        URxvt*font: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+        URxvt*boldFont: -gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
+        URxvt*italicFont: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+
+!       GohuFont 11px
+!        URxvt*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+!        URxvt*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+!        URxvt*boldFont: -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
+!        URxvt*italicFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+
+!       Mononoki
+!        URxvt*font: xft:mononoki:regular:pixelsize=16
+!        URxvt*boldFont: xft:mononoki:bold:pixelsize=16
+!        URxvt*italicFont: xft:mononoki:italic:pixelsize=16
+
+
+
+
+
+
+
+
+! 3 Xcursor {{{1                                                       :xcursor:
+! ==============
+
+
+!   Xcursor - Cursor management library
+
+
+!   Set cursor image size to 16x16 pixels
+    Xcursor.size: 16
+
+
+
+
+
+
+
+
+! 4 Xft {{{1                                                               :xft:
+! ==========
+
+
+!   Xft - X FreeType interface library
+
+
+!   Defaults:
+!     Xft.dpi: 96
+!     Xft.antialias: true
+!     Xft.hinting: true
+!     Xft.rgba: rgb
+!     Xft.autohint: false
+!     Xft.hintstyle: hintslight
+!     Xft.lcdfilter: lcddefault
+
+!   Find `Xft.dpi` value with:
+!     *  https://www.sven.de/dpi/
+!     *  `xdpyinfo | grep -B2 resolution`
+    Xft.dpi: 82
+    Xft.antialias: true
+    Xft.hinting: true
+    Xft.rgba: rgb
+    Xft.autohint: false
+    Xft.hintstyle: hintfull
+    Xft.lcdfilter: lcddefault
+
