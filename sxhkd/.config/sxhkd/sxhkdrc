@@ -14,7 +14,7 @@
 # ║     desc │ sxhkd(1) configuration - simple X hotkey daemon                 ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Tue Aug 30 2016 13:48:58 PDT -0700                              ║
+# ║ modified │ Sun Sep 25 2016 05:16:21 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -107,11 +107,11 @@ mod4 + shift + a
   mono /usr/share/keepass/KeePass.exe --auto-type
 
 # Take screenshots
-ctrl + Print
+ctrl + s + Left
   "$HOME"/bin/screenshot left
-mod4 + Print
+ctrl + s + Up
   "$HOME"/bin/screenshot top
-alt + Print
+ctrl + s + Right
   "$HOME"/bin/screenshot right
 
 # Take screenshot of focused window
