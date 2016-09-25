@@ -115,11 +115,11 @@ ctrl + s + Right
   "$HOME"/bin/screenshot right
 
 # Take screenshot of focused window
-ctrl + alt + p
+ctrl + s + f
   ffcast -q -# "$(xdotool getwindowfocus)" pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
 
 # Take screenshot of clicked window
-mod4 + alt + p
+ctrl + s + c
   ffcast -qfw pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
 
 
