@@ -14,7 +14,7 @@
 # ║     desc │ sxhkd(1) configuration - simple X hotkey daemon                 ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Sun Sep 25 2016 05:16:21 PDT -0700                              ║
+# ║ modified │ Sun Sep 25 2016 17:59:52 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -115,11 +115,11 @@ ctrl + s + Right
   "$HOME"/bin/screenshot right
 
 # Take screenshot of focused window
-ctrl + s + f
+ctrl + alt + p
   ffcast -q -# "$(xdotool getwindowfocus)" pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
 
 # Take screenshot of clicked window
-ctrl + s + c
+mod4 + alt + p
   ffcast -qfw pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
 
 
