@@ -1,1 +1,1 @@
-/home/bah/src/gh/mpv-stats/stats.lua
+../../../.submodules/mpv-stats/stats.lua
