@@ -7,3 +7,6 @@
 [submodule "x11/.submodules/gruvbox-contrib"]
 	path = x11/.submodules/gruvbox-contrib
 	url = https://github.com/morhetz/gruvbox-contrib
+[submodule "x11/.submodules/gruvbox-rofi"]
+	path = x11/.submodules/gruvbox-rofi
+	url = https://github.com/bardisty/gruvbox-rofi
