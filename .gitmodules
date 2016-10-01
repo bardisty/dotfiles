@@ -4,3 +4,6 @@
 [submodule "mpv/.submodules/autosub"]
 	path = mpv/.submodules/autosub
 	url = https://gist.github.com/ce3fb37e775dbd15c698.git
+[submodule "x11/.submodules/gruvbox-contrib"]
+	path = x11/.submodules/gruvbox-contrib
+	url = https://github.com/morhetz/gruvbox-contrib
