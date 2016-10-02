@@ -14,7 +14,7 @@
 # ║     desc │ sxhkd(1) configuration - simple X hotkey daemon                 ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Sun Oct 02 2016 09:05:28 PDT -0700                              ║
+# ║ modified │ Sun Oct 02 2016 09:08:13 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -36,9 +36,6 @@
     #     `ctrl + alt + b`............Buku bookmark manager
     #     `mod4 {_,+ shift} + p`......pass(1) dmenu(1) script
     #     `mod4 + shift + a`..........KeePass global auto-type
-    #     `ctrl + s + Left`...........Take screenshot (left monitor)
-    #     `ctrl + s + Up`.............Take screenshot (top monitor)
-    #     `ctrl + s + Right`..........Take screenshot (right monitor)
     #     `ctrl + Print`..............Take screenshot of focused window
     #     `ctrl + alt + Print`........Take screenshot of clicked window
     #
@@ -105,14 +102,6 @@ mod4 {_,+ shift} + p
 # KeePass global auto-type
 mod4 + shift + a
   mono /usr/share/keepass/KeePass.exe --auto-type
-
-# Take screenshots
-ctrl + s + Left
-  "$HOME"/bin/screenshot left
-ctrl + s + Up
-  "$HOME"/bin/screenshot top
-ctrl + s + Right
-  "$HOME"/bin/screenshot right
 
 # Take screenshot of focused window
 ctrl + Print
