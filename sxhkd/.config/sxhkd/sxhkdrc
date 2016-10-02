@@ -14,7 +14,7 @@
 # ║     desc │ sxhkd(1) configuration - simple X hotkey daemon                 ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Sun Sep 25 2016 17:59:52 PDT -0700                              ║
+# ║ modified │ Sun Oct 02 2016 08:54:38 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -36,9 +36,9 @@
     #     `ctrl + alt + b`............Buku bookmark manager
     #     `mod4 {_,+ shift} + p`......pass(1) dmenu(1) script
     #     `mod4 + shift + a`..........KeePass global auto-type
-    #     `ctrl + Print`..............Take screenshot (left monitor)
-    #     `mod4 + Print`..............Take screenshot (top monitor)
-    #     `alt + Print`...............Take screenshot (right monitor)
+    #     `ctrl + s + Left`...........Take screenshot (left monitor)
+    #     `ctrl + s + Up`.............Take screenshot (top monitor)
+    #     `ctrl + s + Right`..........Take screenshot (right monitor)
     #     `ctrl + alt + p`............Take screenshot of focused window
     #     `mod4 + alt + p`............Take screenshot of clicked window
     #
