@@ -5,8 +5,8 @@ scripts that generate user shaders for prescaling in mpv(1).
 
 ## How to generate
 
-1. `git clone https://github.com/bjin/mpv-prescalers.git ~/src/gh`
--  `cd ~/src/gh`
+1. `git clone https://github.com/bjin/mpv-prescalers.git`
+-  `cd mpv-prescalers`
 -  `./superxbr.py --target=all --sharpness=1.3 > ~/.config/mpv/shaders/superxbr--all--1.3-sharpness.hook`
 
 ## Usage
