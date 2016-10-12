@@ -21,7 +21,7 @@
 # Usually sourced in:
 #     * ~/.xinitrc........for use with X sessions⁽¹⁾
 #     * ~/.zprofile.......for use with Zsh login shells⁽¹⁾
-#     * ~/.zshenv.........for use with Zsh shell / everything else
+#     * ~/.zshenv.........for use with Zsh shell
 #
 # 1. Normally, the path should be set in `~/.zshenv`, but Arch Linux
 #    sources `/etc/profile` after sourcing `~/.zshenv`
