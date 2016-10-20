@@ -15,7 +15,7 @@
 # ║     desc │ X Window System initializer                                     ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Sun Sep 18 2016 06:57:43 PDT -0700                              ║
+# ║ modified │ Thu Oct 20 2016 07:19:06 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -141,7 +141,7 @@
 
     # Set wallpaper with feh(1) {{{2
     FEHBG="${HOME}/.fehbg"
-    [ -x "$FEHBG" ] && sh "$FEHBG" &
+    [ -x "$FEHBG" ] && "$FEHBG" &
 
 
 
