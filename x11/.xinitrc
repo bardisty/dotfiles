@@ -15,7 +15,7 @@
 # ║     desc │ X Window System initializer                                     ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Thu Oct 20 2016 07:19:06 PDT -0700                              ║
+# ║ modified │ Thu Oct 20 2016 07:29:03 PDT -0700                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -227,7 +227,7 @@
     if_cmd_exists dropbox &
 
 
-    # NetworkManager systray applet {{{2
+    # nm-applet -- NetworkManager systray applet {{{2
     if_cmd_exists nm-applet &
 
 
@@ -242,7 +242,7 @@
     [ -x "$THYME" ] && "$THYME" &
 
 
-    # urxvt daemon (for use with urxvtc) {{{2
+    # urxvtd -- urxvt daemon (for use with urxvtc) {{{2
     if_cmd_exists urxvtd -q -o -f &
 
 
