@@ -2,7 +2,7 @@
 
 Various color themes I use for
 [Rofi](https://github.com/DaveDavenport/rofi) - a window switcher, run
-dialog, and dmenu replacement.
+launcher, ssh dialog, and dmenu replacement.
 
 ## Gruvbox
 
