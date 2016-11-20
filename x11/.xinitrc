@@ -15,7 +15,7 @@
 # ║     desc │ X Window System initializer                                     ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Thu Oct 20 2016 07:29:03 PDT -0700                              ║
+# ║ modified │ Sat Nov 19 2016 21:22:07 PST -0800                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -239,7 +239,9 @@
     # thyme -- track which applications you use and for how long {{{2
     # https://github.com/sourcegraph/thyme
     THYME="${HOME}/bin/thyme.sh"
+    THYME_CRON="${HOME}/bin/thyme-cron.sh"
     [ -x "$THYME" ] && "$THYME" &
+    [ -x "$THYME_CRON" ] && "$THYME_CRON" &
 
 
     # urxvtd -- urxvt daemon (for use with urxvtc) {{{2
