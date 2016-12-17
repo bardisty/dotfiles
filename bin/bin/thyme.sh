@@ -14,13 +14,14 @@
 # |     desc | Track application usage with thyme (sourcegraph/thyme)          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Fri Nov 04 2016 14:50:36 PDT -0700                              |
+# | modified | Sat Dec 17 2016 10:11:16 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
 FILE_NAME="$(date +%F_%s).json"
 OUTPUT_DIR="${HOME}/tmp/thyme"
 ERROR_LOG="${HOME}/var/log/error/thyme.log"
+INTERVAL=5
 
 if command -v thyme > /dev/null 2>&1; then
   THYME_BIN=$(command -v thyme)
@@ -33,6 +34,6 @@ fi
 
 while true; do
   $THYME_BIN track -o "${OUTPUT_DIR}/${FILE_NAME}" 2>"$ERROR_LOG"
-  sleep 5
+  sleep "$INTERVAL"
 done
 
