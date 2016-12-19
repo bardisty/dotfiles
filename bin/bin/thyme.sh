@@ -14,11 +14,11 @@
 # |     desc | Track application usage with thyme (sourcegraph/thyme)          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Mon Dec 19 2016 12:29:29 PST -0800                              |
+# | modified | Mon Dec 19 2016 13:30:53 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
-FILE_NAME="$(date +%F_%s).json"
+FILE_NAME="$(date +%F_%T_%s).json"
 OUTPUT_DIR="${HOME}/tmp/thyme"
 ERROR_LOG_DIR="${HOME}/var/log/error"
 ERROR_LOG_FILE="thyme.log"
