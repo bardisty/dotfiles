@@ -14,13 +14,15 @@
 # |     desc | Periodically copy thyme data files from memory to disk          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Sat Dec 17 2016 10:11:23 PST -0800                              |
+# | modified | Mon Dec 19 2016 12:29:24 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
 DATA_FILES="${HOME}/tmp/thyme/?*.json"
 SAVE_DIR="${HOME}/var/thyme"
 INTERVAL=600
+
+[ ! -d "$SAVE_DIR" ] && mkdir -p "$SAVE_DIR"
 
 while true; do
   if [ -n "$DATA_FILES" ]; then
