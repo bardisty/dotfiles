@@ -14,7 +14,7 @@
 # ║     desc │ sxhkd(1) configuration - simple X hotkey daemon                 ║
 # ║   author │ bardisty <b@bah.im>                                             ║
 # ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Sun Oct 02 2016 09:08:13 PDT -0700                              ║
+# ║ modified │ Sun Nov 20 2016 02:26:38 PST -0800                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 
@@ -37,6 +37,8 @@
     #     `mod4 {_,+ shift} + p`......pass(1) dmenu(1) script
     #     `mod4 + shift + a`..........KeePass global auto-type
     #     `ctrl + Print`..............Take screenshot of focused window
+    #     `ctrl + shift + Print`......Take screenshot of focused window (no
+    #                                 padding)
     #     `ctrl + alt + Print`........Take screenshot of clicked window
     #
     #
@@ -106,6 +108,10 @@ mod4 + shift + a
 # Take screenshot of focused window
 ctrl + Print
   ffcast -q -# "$(xdotool getwindowfocus)" pad '25' png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
+
+# Take screenshot of focused window (no padding)
+ctrl + shift + Print
+  ffcast -q -# "$(xdotool getwindowfocus)" png "${HOME}/tmp/screenshot-$(date +%s)_%s.png"
 
 # Take screenshot of clicked window
 ctrl + alt + Print
