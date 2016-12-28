@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Dec 28 2016 01:15:28 PST -0800                              |
+# | modified | Wed Dec 28 2016 13:50:08 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -83,6 +83,10 @@
     #     * Also set in `~/.zshenv`
     export GOPATH="${HOME}/src/go"
 
+    # Load infinality settings for better text rendering
+    INFINALITY_SETTINGS="${HOME}/.config/infinality/infinality-settings.sh"
+    # shellcheck source=/home/bah/.config/infinality/infinality-settings.sh
+    [ -x "$INFINALITY_SETTINGS" ] && . "$INFINALITY_SETTINGS"
 
     # > Normally, the path should be set in `~/.zshenv`, but Arch Linux
     # > sources `/etc/profile` after sourcing `~/.zshenv`⁽¹⁾
