@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Dec 28 2016 13:54:20 PST -0800                              |
+# | modified | Wed Dec 28 2016 13:58:22 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -82,6 +82,11 @@
     # Go workspace location / where to look for Go code
     #     * Also set in `~/.zshenv`
     export GOPATH="${HOME}/src/go"
+
+    # Ensure GTK themes are applied uniformly
+    #     * Use `lxappearance` to manage the config files
+    export GTK2_RC_FILES="${HOME}/.gtkrc-2.0"
+    export GTK_THEME="${HOME}/.config/gtk-3.0/settings.ini"
 
     # Load infinality settings for better text rendering
     INFINALITY_SETTINGS="${HOME}/.config/infinality/infinality-settings.sh"
