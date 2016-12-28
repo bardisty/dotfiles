@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Dec 28 2016 13:58:22 PST -0800                              |
+# | modified | Wed Dec 28 2016 14:01:02 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -244,6 +244,10 @@
 
     # nm-applet -- NetworkManager systray applet {{{2
     if_cmd_exists nm-applet &
+
+
+    # redshift -- adjust color temp of display according to time of day {{{2
+    if_cmd_exists redshift &
 
 
     # sxhkd -- simple X hotkey daemon {{{2
