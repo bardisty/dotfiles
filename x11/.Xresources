@@ -14,7 +14,7 @@
 ! |     desc | Configuration parameters for X client applications              |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Thu Sep 22 2016 23:26:57 PDT -0700                              |
+! | modified | Sat Dec 31 2016 17:06:58 PST -0800                              |
 ! '----------------------------------------------------------------------------'
 
 
@@ -50,9 +50,6 @@
 !   Gruvbox color scheme
     #include "/home/bah/.Xresources.d/rofi/themes/gruvbox-dark.theme"
 
-!   Window opacity
-    rofi.opacity: 97
-
 !   Window width
     rofi.width: 30
 
@@ -62,8 +59,15 @@
 !   Number of columns
     rofi.columns: 1
 
+!   Always show number of lines
+    rofi.fixed-num-lines: false
+
+!   Separator style
+    rofi.separator-style: solid
+
 !   Font to use
-    rofi.font: GohuFont 14
+!    rofi.font: GohuFont 14
+    rofi.font: Operator Mono Medium 12
 
 !   Border width
     rofi.bw: 2
