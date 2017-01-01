@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Dec 28 2016 14:01:02 PST -0800                              |
+# | modified | Sat Dec 31 2016 17:11:36 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -99,7 +99,7 @@
     # Source order:
     #     Login shell:
     #         ~/.zshenv -> /etc/profile -> ~/.zprofile
-    #     X Session:
+    #     X session:
     #         ~/.zshenv -> /etc/profile -> ~/.xinitrc (X initialized) -> ~/.zshenv (e.g., terminal opened)
     #
     # To prevent the $PATH from being overwritten...
