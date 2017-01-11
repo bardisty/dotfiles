@@ -1,6 +1,6 @@
 # dotfiles
 
-> Linux config files (beets, cmus, GnuPG, i3, mpv, ranger, sxhkd, X11)
+> Linux config files (beets, cmus, GnuPG, i3, mpv, ranger, rofi, sxhkd, X11)
 
 ```text
                    dP            dP   .8888b oo dP
@@ -22,6 +22,7 @@
 |     inox | chromium browser (inox-patchset)              chromium-browser(1) |
 |      mpv | media player                                               mpv(1) |
 |   ranger | file manager                                            ranger(1) |
+|     rofi | run launcher, window switcher, etc.                       rofi(1) |
 |    sxhkd | simple x hotkey daemon                                   sxhkd(1) |
 |      x11 | x window system                        x(7), xinit(1), xserver(1) |
 `------------------------------------------------------------------------------'
