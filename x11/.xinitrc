@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Tue Jan 10 2017 18:37:27 PST -0800                              |
+# | modified | Tue Jan 10 2017 18:41:39 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -234,6 +234,10 @@
 
     # dropbox -- cloud storage, file sync {{{2
     if_cmd_exists dropbox &
+
+
+    # jackdbus -- JACK audio connection kit {{{2
+    if_cmd_exists jack_control start &
 
 
     # nm-applet -- NetworkManager systray applet {{{2
