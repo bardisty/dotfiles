@@ -1,0 +1,56 @@
+! vim:ft=xdefaults:
+!
+!                                             .8888b oo
+!                                             88   "
+!                           88d888b. .d8888b. 88aaa  dP
+!                           88'  `88 88'  `88 88     88
+!                           88       88.  .88 88     88
+! .------------------------ dP       `88888P' dP     dP -----------------------.
+! |:::::::::::::::::::::::::..::::::::......::..:::::..::::::::::::::::::::::::|
+! |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+! |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+! |----------------------------------------------------------------------------|
+! |     file | ~/.config/rofi/config                                           |
+! |     desc | Rofi(1) configuration file                                      |
+! |   author | bardisty <b@bah.im>                                             |
+! |   source | https://github.com/bardisty/dotfiles                            |
+! | modified | Tue Jan 10 2017 14:41:08 PST -0800                              |
+! `----------------------------------------------------------------------------'
+
+
+! rofi - A window switcher, run launcher, ssh dialog, and dmenu replacement
+!
+! Run `rofi -dump-Xresources` for a list of rofi configuration directives.
+
+
+! Gruvbox color scheme
+#include "/home/bah/.config/rofi/themes/gruvbox-dark.theme"
+
+! Window width
+rofi.width: 24
+
+! Number of lines
+rofi.lines: 12
+
+! Number of columns
+rofi.columns: 1
+
+! Always show number of lines
+rofi.fixed-num-lines: false
+
+! Separator style
+rofi.separator-style: solid
+
+! Font to use
+!rofi.font: GohuFont 14
+rofi.font: Operator Mono Medium 12
+
+! Border width
+rofi.bw: 2
+
+! Padding
+rofi.padding: 2
+
+! Terminal to use
+rofi.terminal: urxvt
+
