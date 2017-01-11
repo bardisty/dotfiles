@@ -14,7 +14,7 @@
 ! |     desc | Configuration parameters for X client applications              |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Sat Dec 31 2016 17:06:58 PST -0800                              |
+! | modified | Tue Jan 10 2017 14:43:44 PST -0800                              |
 ! '----------------------------------------------------------------------------'
 
 
@@ -22,14 +22,13 @@
 ! _____________
 
 
-!   1 Rofi                    :rofi:
-!   2 URxvt                   :urxvt:
-!   .. 2.1 Colors                :urxvt:colors:
-!   .. 2.2 Cursor                :urxvt:cursor:
-!   .. 2.3 Extensions            :urxvt:extensions:
-!   .. 2.4 Text                  :urxvt:text:
-!   3 Xcursor                 :xcursor:
-!   4 Xft                     :xft:
+!   1 URxvt                   :urxvt:
+!   .. 1.1 Colors                :urxvt:colors:
+!   .. 1.2 Cursor                :urxvt:cursor:
+!   .. 1.3 Extensions            :urxvt:extensions:
+!   .. 1.4 Text                  :urxvt:text:
+!   2 Xcursor                 :xcursor:
+!   3 Xft                     :xft:
 
 
 
@@ -38,54 +37,7 @@
 
 
 
-! 1 Rofi {{{1                                                             :rofi:
-! ===========
-
-
-!   rofi - A window switcher, run launcher, ssh dialog, and dmenu replacement
-!
-!   Run `rofi -dump-Xresources` for a list of rofi configuration directives.
-
-
-!   Gruvbox color scheme
-    #include "/home/bah/.Xresources.d/rofi/themes/gruvbox-dark.theme"
-
-!   Window width
-    rofi.width: 30
-
-!   Number of lines
-    rofi.lines: 12
-
-!   Number of columns
-    rofi.columns: 1
-
-!   Always show number of lines
-    rofi.fixed-num-lines: false
-
-!   Separator style
-    rofi.separator-style: solid
-
-!   Font to use
-!    rofi.font: GohuFont 14
-    rofi.font: Operator Mono Medium 12
-
-!   Border width
-    rofi.bw: 2
-
-!   Padding
-    rofi.padding: 2
-
-!   Terminal to use
-    rofi.terminal: urxvt
-
-
-
-
-
-
-
-
-! 2 URxvt {{{1                                                           :urxvt:
+! 1 URxvt {{{1                                                           :urxvt:
 ! ============
 
 
@@ -168,7 +120,7 @@
 
 
 
-! 3 Xcursor {{{1                                                       :xcursor:
+! 2 Xcursor {{{1                                                       :xcursor:
 ! ==============
 
 
@@ -185,7 +137,7 @@
 
 
 
-! 4 Xft {{{1                                                               :xft:
+! 3 Xft {{{1                                                               :xft:
 ! ==========
 
 
