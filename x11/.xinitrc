@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Sat Dec 31 2016 17:11:36 PST -0800                              |
+# | modified | Tue Jan 10 2017 18:37:27 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -151,12 +151,6 @@
     # Set wallpaper with feh(1) {{{2
     FEHBG="${HOME}/.fehbg"
     [ -x "$FEHBG" ] && "$FEHBG" &
-
-
-    # NVIDIA settings {{{2
-    # * Load NVIDIA graphics driver configuration file (`~/.nvidia-settings-rc`)
-    # * Send values to X server and exit
-    nvidia-settings --load-config-only &
 
 
 
