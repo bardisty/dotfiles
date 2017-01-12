@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Tue Jan 10 2017 18:41:39 PST -0800                              |
+# | modified | Thu Jan 12 2017 02:25:45 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -87,11 +87,6 @@
     #     * Use `lxappearance` to manage the config files
     export GTK2_RC_FILES="${HOME}/.gtkrc-2.0"
     export GTK_THEME="${HOME}/.config/gtk-3.0/settings.ini"
-
-    # Load infinality settings for better text rendering
-    INFINALITY_SETTINGS="${HOME}/.config/infinality/infinality-settings.sh"
-    # shellcheck source=/home/bah/.config/infinality/infinality-settings.sh
-    [ -x "$INFINALITY_SETTINGS" ] && . "$INFINALITY_SETTINGS"
 
     # > Normally, the path should be set in `~/.zshenv`, but Arch Linux
     # > sources `/etc/profile` after sourcing `~/.zshenv`⁽¹⁾
