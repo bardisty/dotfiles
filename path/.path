@@ -29,7 +29,7 @@
 #    Source order:
 #       Login shell:
 #           ~/.zshenv -> /etc/profile -> ~/.zprofile
-#       X Session:
+#       X session:
 #           ~/.zshenv -> /etc/profile -> ~/.xinitrc (X initialized) -> ~/.zshenv (e.g., terminal opened)
 #
 #    To prevent the $PATH from being overwritten...
