@@ -14,7 +14,7 @@
 ! |     desc | Configuration parameters for X client applications              |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Tue Jan 10 2017 18:27:08 PST -0800                              |
+! | modified | Fri Jan 13 2017 06:20:22 PST -0800                              |
 ! '----------------------------------------------------------------------------'
 
 
@@ -172,6 +172,6 @@
     Xft.hinting: true
     Xft.rgba: rgb
     Xft.autohint: false
-    Xft.hintstyle: hintfull
+    Xft.hintstyle: hintslight
     Xft.lcdfilter: lcddefault
 
