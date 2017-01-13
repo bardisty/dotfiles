@@ -77,3 +77,14 @@ if [ -d "$RUBY_BIN" ]; then
   fi
 fi
 
+
+# Add rbenv shims to $PATH if:
+#     * rbenv shims directory exists
+#     * rbenv shims directory does not already exist in the $PATH
+RBENV_SHIMS="${HOME}/.rbenv/shims"
+if [ -d "$RBENV_SHIMS" ]; then
+  if ! exists_in_path "$RBENV_SHIMS"; then
+    export PATH="${PATH}:${RBENV_SHIMS}"
+  fi
+fi
+
