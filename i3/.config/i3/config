@@ -15,7 +15,7 @@
 # |     desc | i3(1) window manager configuration (Airblader fork; gaps-next)  |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Sun Jan 15 2017 16:16:50 PST -0800                              |
+# | modified | Sun Jan 15 2017 17:24:03 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -118,7 +118,7 @@
     client.focused          $background $white_dark $foreground $white_dark
     client.focused_inactive $background $background $foreground $background
     client.unfocused        $background $background $foreground $background
-    client.urgent           $background $red_light  $foreground $red_light
+    client.urgent           $background $red_dark   $foreground $red_dark
     client.background       $background
 
 
