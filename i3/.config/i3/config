@@ -47,9 +47,8 @@
 
     # Monitors
     #     * Values are from `xrandr` output
-    set $monitor_left  DVI-I-0
-    set $monitor_top   HDMI-0
-    set $monitor_right DP-0
+    set $monitor_top    HDMI-0
+    set $monitor_bottom DP-0
 
     # Use Mouse+$mod to drag floating windows to their wanted position
     floating_modifier $mod
@@ -231,8 +230,8 @@
       font pango: GohuFont, FontAwesome 14px
       workspace_buttons yes
 
-      bindsym button4 exec --no-startup-id i3-msg workspace $ws1;workspace $ws4;workspace $ws7
-      bindsym button5 exec --no-startup-id i3-msg workspace $ws2;workspace $ws5;workspace $ws8
+      bindsym button4 exec --no-startup-id i3-msg workspace $ws1;workspace $ws9
+      bindsym button5 exec --no-startup-id i3-msg workspace $ws2;workspace $ws10
 
       colors {
         background $background
@@ -287,16 +286,16 @@
     set $ws10 10
 
     # Assign certain workspaces to certain monitors
-    workspace $ws1 output $monitor_left
-    workspace $ws2 output $monitor_left
-    workspace $ws3 output $monitor_left
-    workspace $ws4 output $monitor_top
-    workspace $ws5 output $monitor_top
-    workspace $ws6 output $monitor_top
-    workspace $ws7 output $monitor_right
-    workspace $ws8 output $monitor_right
-    workspace $ws9 output $monitor_right
-    workspace $ws10 output $monitor_right
+    workspace $ws1 output $monitor_bottom
+    workspace $ws2 output $monitor_bottom
+    workspace $ws3 output $monitor_bottom
+    workspace $ws4 output $monitor_bottom
+    workspace $ws5 output $monitor_bottom
+    workspace $ws6 output $monitor_bottom
+    workspace $ws7 output $monitor_bottom
+    workspace $ws8 output $monitor_bottom
+    workspace $ws9 output $monitor_top
+    workspace $ws10 output $monitor_top
 
     # Switch to workspace
     bindsym $mod+1 workspace $ws1
