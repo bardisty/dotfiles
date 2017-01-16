@@ -15,7 +15,7 @@
 # |     desc | i3(1) window manager configuration (Airblader fork; gaps-next)  |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Sun Jan 15 2017 17:24:03 PST -0800                              |
+# | modified | Sun Jan 15 2017 17:26:28 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -132,7 +132,7 @@
 # ===========
 
 
-    gaps inner 30
+    gaps inner 32
     gaps outer 100
 
     # Change inner and outer gap sizes easily
