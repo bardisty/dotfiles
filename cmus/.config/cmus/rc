@@ -10,7 +10,7 @@
 # |     desc | cmus(1) configuration - C* music player                         |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Mon Jan 23 2017 03:26:13 PST -0800                              |
+# | modified | Mon Jan 23 2017 03:26:51 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -46,8 +46,8 @@ set color_win_cur_sel_fg=black
 set color_win_dir=yellow
 #set color_win_fg=default
 #set color_win_inactive_cur_sel_attr=default
-#set color_win_inactive_cur_sel_bg=darkgray
-#set color_win_inactive_cur_sel_fg=black
+set color_win_inactive_cur_sel_bg=darkgray
+set color_win_inactive_cur_sel_fg=black
 #set color_win_inactive_sel_attr=default
 set color_win_inactive_sel_bg=darkgray
 set color_win_inactive_sel_fg=black
