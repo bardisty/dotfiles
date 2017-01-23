@@ -1,17 +1,17 @@
 #                      .d8888b. 88d8b.d8b. dP    dP .d8888b.
 #                      88'  `"" 88'`88'`88 88    88 Y8ooooo.
 #                      88.  ... 88  88  88 88.  .88       88
-# ╔═══════════════════ `88888P' dP  dP  dP `88888P' `88888P' ══════════════════╗
-# ║:::::::::::::::::::::......::..::..::..::......:::......::::::::::::::::::::║
-# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
-# ║::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::║
-# ╠════════════════════════════════════════════════════════════════════════════╣
-# ║     file │ ~/.config/cmus/rc                                               ║
-# ║     desc │ cmus(1) configuration - C* music player                         ║
-# ║   author │ bardisty <b@bah.im>                                             ║
-# ║   source │ https://github.com/bardisty/dotfiles                            ║
-# ║ modified │ Mon Jul 04 2016 18:18:10 PDT -0700                              ║
-# ╚════════════════════════════════════════════════════════════════════════════╝
+# .------------------- `88888P' dP  dP  dP `88888P' `88888P' ------------------.
+# |:::::::::::::::::::::......::..::..::..::......:::......::::::::::::::::::::|
+# |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+# |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+# |----------------------------------------------------------------------------|
+# |     file | ~/.config/cmus/rc                                               |
+# |     desc | cmus(1) configuration - C* music player                         |
+# |   author | bardisty <b@bah.im>                                             |
+# |   source | https://github.com/bardisty/dotfiles                            |
+# | modified | Mon Jan 23 2017 03:10:51 PST -0800                              |
+# `----------------------------------------------------------------------------'
 
 
 #set aaa_mode=album
@@ -32,8 +32,8 @@
 #set color_info=lightyellow
 set color_separator=yellow
 #set color_statusline_attr=default
-#set color_statusline_bg=default
-#set color_statusline_fg=default
+set color_statusline_bg=default
+set color_statusline_fg=yellow
 #set color_titleline_attr=default
 #set color_titleline_bg=default
 set color_titleline_fg=yellow
@@ -55,7 +55,7 @@ set color_win_inactive_sel_fg=black
 set color_win_sel_bg=yellow
 set color_win_sel_fg=black
 #set color_win_title_attr=default
-#set color_win_title_bg=default
+set color_win_title_bg=default
 set color_win_title_fg=yellow
 #set confirm_run=true
 #set continue=true
