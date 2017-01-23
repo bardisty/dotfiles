@@ -10,7 +10,7 @@
 # |     desc | cmus(1) configuration - C* music player                         |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Mon Jan 23 2017 03:10:51 PST -0800                              |
+# | modified | Mon Jan 23 2017 03:26:13 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -33,7 +33,7 @@
 set color_separator=yellow
 #set color_statusline_attr=default
 set color_statusline_bg=default
-set color_statusline_fg=yellow
+set color_statusline_fg=gray
 #set color_titleline_attr=default
 #set color_titleline_bg=default
 set color_titleline_fg=yellow
