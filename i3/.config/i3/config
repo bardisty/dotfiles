@@ -15,7 +15,7 @@
 # |     desc | i3(1) window manager configuration (Airblader fork; gaps-next)  |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Sun Jan 15 2017 17:32:07 PST -0800                              |
+# | modified | Tue Jan 24 2017 10:34:41 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -222,31 +222,30 @@
 
     exec_always --no-startup-id ~/bin/polybar-launch.sh
 
-    bar {
-      height 32
-      #mode dock
-      mode invisible
-      #status_command i3status -c ~/.config/i3/status.conf
-      #status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks -c ~/.config/i3blocks/config 2>~/var/log/error/i3blocks.log
-      position top
-      tray_output $monitor_bottom
-      font pango: Gohu GohuFont, FontAwesome 14px
-      workspace_buttons yes
-
-      bindsym button4 exec --no-startup-id i3-msg workspace $ws1;workspace $ws9
-      bindsym button5 exec --no-startup-id i3-msg workspace $ws2;workspace $ws10
-
-      colors {
-        background $background
-        statusline $foreground_soft
-        separator  $background
-
-        focused_workspace  $background $background $foreground
-        active_workspace   $background $background $white_dark
-        inactive_workspace $background $background $black_light
-        urgent_workspace   $background $background $red_light
-      }
-    }
+#    bar {
+#      height 32
+#      mode dock
+#      #status_command i3status -c ~/.config/i3/status.conf
+#      status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks -c ~/.config/i3blocks/config 2>~/var/log/error/i3blocks.log
+#      position top
+#      tray_output $monitor_bottom
+#      font pango: Gohu GohuFont, FontAwesome 14px
+#      workspace_buttons yes
+#
+#      bindsym button4 exec --no-startup-id i3-msg workspace $ws1;workspace $ws9
+#      bindsym button5 exec --no-startup-id i3-msg workspace $ws2;workspace $ws10
+#
+#      colors {
+#        background $background
+#        statusline $foreground_soft
+#        separator  $background
+#
+#        focused_workspace  $background $background $foreground
+#        active_workspace   $background $background $white_dark
+#        inactive_workspace $background $background $black_light
+#        urgent_workspace   $background $background $red_light
+#      }
+#    }
 
 
 
