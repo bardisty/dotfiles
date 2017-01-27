@@ -14,7 +14,7 @@
 ! |     desc | Configuration parameters for X client applications              |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Fri Jan 13 2017 06:20:22 PST -0800                              |
+! | modified | Fri Jan 27 2017 07:49:20 PST -0800                              |
 ! '----------------------------------------------------------------------------'
 
 
@@ -98,29 +98,9 @@
 
 !       GohuFont
 !       http://font.gohu.org/
-!        URxvt*font: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
-!        URxvt*boldFont: -gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
-!        URxvt*italicFont: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
-
-!       GohuFont 11px
-!        URxvt*font: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!        URxvt*boldFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!        URxvt*boldFont: -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso10646-1
-!        URxvt*italicFont: -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-
-!       Mononoki
-!        URxvt*font: xft:mononoki:regular:pixelsize=16
-!        URxvt*boldFont: xft:mononoki:bold:pixelsize=16
-!        URxvt*italicFont: xft:mononoki:italic:pixelsize=16
-
-!       Operator Mono
-        URxvt*font: xft:Operator Mono Medium:Regular:pixelsize=16
-        URxvt*boldFont: xft:Operator Mono Bold:Regular:pixelsize=16
-        URxvt*italicFont: xft:Operator Mono Medium:Italic:pixelsize=16
-
-!        URxvt*font: xft:Operator Mono Medium:Regular:size=14
-!        URxvt*boldFont: xft:Operator Mono Bold:Regular:size=14
-!        URxvt*italicFont: xft:Operator Mono Medium:Italic:size=14
+        URxvt*font: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+        URxvt*boldFont: -gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
+        URxvt*italicFont: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
 
 
 
