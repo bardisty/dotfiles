@@ -14,29 +14,29 @@
 # |     desc | Track application usage with thyme (sourcegraph/thyme)          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Sun Mar 19 2017 10:25:59 PDT -0700                              |
+# | modified | Sun Mar 19 2017 10:29:15 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
-FILE_NAME="$(date +%FT%T%z_%s).json"
-OUTPUT_DIR="${HOME}/tmp/thyme"
-ERROR_LOG_DIR="${HOME}/var/log/error"
-ERROR_LOG_FILE="thyme.log"
-INTERVAL=5
+file_name="$(date +%FT%T%z_%s).json"
+output_dir="${HOME}/tmp/thyme"
+error_log_dir="${HOME}/var/log/error"
+error_log_file="thyme.log"
+interval=5
 
 if command -v thyme > /dev/null 2>&1; then
-  THYME_BIN=$(command -v thyme)
+  thyme_bin=$(command -v thyme)
 else
   echo "Error: \`thyme\` command not found." >&2
   exit 127
 fi
 
-[ ! -d "$OUTPUT_DIR" ] && mkdir -p "$OUTPUT_DIR"
-[ ! -d "$ERROR_LOG_DIR" ] && mkdir -p "$ERROR_LOG_DIR"
+[ ! -d "$output_dir" ] && mkdir -p "$output_dir"
+[ ! -d "$error_log_dir" ] && mkdir -p "$error_log_dir"
 
 while true; do
-  $THYME_BIN track -o "${OUTPUT_DIR}/${FILE_NAME}" \
-    2>"${ERROR_LOG_DIR}/${ERROR_LOG_FILE}"
-  sleep "$INTERVAL"
+  $thyme_bin track -o "${output_dir}/${file_name}" \
+    2>"${error_log_dir}/${error_log_file}"
+  sleep "$interval"
 done
 
