@@ -14,7 +14,7 @@
 # |     desc | Track application usage with thyme (sourcegraph/thyme)          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Sun Mar 19 2017 10:36:25 PDT -0700                              |
+# | modified | Sun Mar 19 2017 10:42:18 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -46,8 +46,8 @@ fi
 
 
 while true; do
-  $thyme_bin track -o "${output_dir}/${file_name}" \
-    2>"${error_log_dir}/${error_log_file}"
+  $thyme_bin track -o "${output_dir%/}/${file_name}" \
+    2>"${error_log_dir%/}/${error_log_file}"
   sleep "$interval"
 done
 
