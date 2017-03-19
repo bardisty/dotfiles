@@ -14,7 +14,7 @@
 # |     desc | Periodically copy thyme data files from memory to disk          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Sun Mar 19 2017 10:29:58 PDT -0700                              |
+# | modified | Sun Mar 19 2017 10:35:57 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -22,7 +22,12 @@ data_files="${HOME}/tmp/thyme/?*.json"
 save_dir="${HOME}/var/thyme"
 interval=300
 
-[ ! -d "$save_dir" ] && mkdir -p "$save_dir"
+if [ ! -d "$save_dir" ]; then
+  if ! mkdir -p "$save_dir"; then
+    printf %s\\n "Failed to create save directory: ${save_dir}"
+    exit 1
+  fi
+fi
 
 while true; do
   if [ -n "$data_files" ]; then

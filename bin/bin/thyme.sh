@@ -14,7 +14,7 @@
 # |     desc | Track application usage with thyme (sourcegraph/thyme)          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Sun Mar 19 2017 10:29:15 PDT -0700                              |
+# | modified | Sun Mar 19 2017 10:36:25 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -31,8 +31,19 @@ else
   exit 127
 fi
 
-[ ! -d "$output_dir" ] && mkdir -p "$output_dir"
-[ ! -d "$error_log_dir" ] && mkdir -p "$error_log_dir"
+if [ ! -d "$output_dir" ]; then
+  if ! mkdir -p "$output_dir"; then
+    printf %s\\n "Failed to create output directory: ${output_dir}" >&2
+    exit 1
+  fi
+fi
+
+if [ ! -d "$error_log_dir" ]; then
+  if ! mkdir -p "$error_log_dir"; then
+    printf %s\\n "Failed to create error directory: ${output_dir}" >&2
+  fi
+fi
+
 
 while true; do
   $thyme_bin track -o "${output_dir}/${file_name}" \
