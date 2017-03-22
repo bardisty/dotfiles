@@ -14,7 +14,7 @@
 # |     desc | Track application usage with thyme (sourcegraph/thyme)          |
 # |   source | https://github.com/bardisty/dotfiles                            |
 # |   author | bardisty <b@bah.im>                                             |
-# | modified | Sun Mar 19 2017 10:42:18 PDT -0700                              |
+# | modified | Wed Mar 22 2017 06:30:35 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -40,7 +40,7 @@ fi
 
 if [ ! -d "$error_log_dir" ]; then
   if ! mkdir -p "$error_log_dir"; then
-    printf %s\\n "Failed to create error directory: ${output_dir}" >&2
+    printf %s\\n "Failed to create error log directory: ${error_log_dir}" >&2
   fi
 fi
 
