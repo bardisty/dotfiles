@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Tue Mar 28 2017 13:33:22 PDT -0700                              |
+# | modified | Tue Mar 28 2017 13:36:48 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -27,7 +27,7 @@
     # 2 X Environment Variables             :x-environment-variables:
     # 3 General                             :general:
     # 4 GnuPG                               :gnupg:
-    # 5 Background Apps                     :background-apps:
+    # 5 Background Processes                :background-processes::
     # 6 Window Manager                      :window-manager:
 
 
@@ -191,8 +191,8 @@
 
 
 
-# 5 Background Apps {{{1                                       :background-apps:
-# ======================
+# 5 Background Processes {{{1                             :background-processes:
+# ===========================
 
 
     # Run command if it exists {{{2
