@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Thu Jan 12 2017 02:25:45 PST -0800                              |
+# | modified | Tue Mar 28 2017 13:33:22 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -225,10 +225,6 @@
     # https://github.com/chjj/compton
     #if_cmd_exists compton -b --config "${HOME}/.config/compton.conf"  # https://github.com/chjj/compton/issues/355
     if_cmd_exists compton --config "${HOME}/.config/compton.conf" &
-
-
-    # dropbox -- cloud storage, file sync {{{2
-    if_cmd_exists dropbox &
 
 
     # jackdbus -- JACK audio connection kit {{{2
