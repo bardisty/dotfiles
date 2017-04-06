@@ -12,3 +12,5 @@
 [status]
 	submodulesummary = 1
 	showUntrackedFiles = all
+[merge]
+	conflictStyle = diff3
