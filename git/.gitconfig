@@ -4,6 +4,7 @@
 	signingkey = D38A5C417347AD45
 [push]
 	default = simple
+	followTags = true
 [commit]
 	gpgsign = true
 [gpg]
