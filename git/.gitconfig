@@ -10,3 +10,4 @@
 	program = gpg2
 [status]
 	submodulesummary = 1
+	showUntrackedFiles = all
