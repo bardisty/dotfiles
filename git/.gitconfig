@@ -15,3 +15,5 @@
 [merge]
 	conflictStyle = diff3
 	ff = only
+[transfer]
+	fsckObjects = true
