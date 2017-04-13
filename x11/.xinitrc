@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Tue Mar 28 2017 13:39:14 PDT -0700                              |
+# | modified | Wed Apr 12 2017 21:20:42 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -223,8 +223,7 @@
 
     # compton -- composite manager {{{2
     # https://github.com/chjj/compton
-    #if_cmd_exists compton -b --config "${HOME}/.config/compton.conf"  # https://github.com/chjj/compton/issues/355
-    if_cmd_exists compton --config "${HOME}/.config/compton.conf" &
+    if_cmd_exists compton -b --config "${HOME}/.config/compton.conf"
 
 
     # jackdbus -- JACK audio connection kit {{{2
