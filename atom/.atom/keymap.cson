@@ -1,0 +1,14 @@
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'space w': 'core:save'
+
+'atom-text-editor.vim-mode-plus:not(.normal-mode)':
+  'j k': 'vim-mode-plus:activate-normal-mode'
+  'j j': 'vim-mode-plus:activate-normal-mode'
+
+'body':
+  'ctrl-n': 'pane:show-next-item'
+  'ctrl-p': 'pane:show-previous-item'
+
+'.platform-linux':
+  'ctrl-;': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-p': 'pane:show-previous-item'
