@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Apr 12 2017 21:20:42 PDT -0700                              |
+# | modified | Tue Jun 06 2017 01:04:26 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -134,7 +134,6 @@
     }
 
     xorg_font_paths "${HOME}/.local/share/fonts/" \
-                    "${HOME}/.local/share/fonts/envypn-font/" \
                     /usr/share/fonts/local/ \
                     /usr/share/fonts/misc/
 
