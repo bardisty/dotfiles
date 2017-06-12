@@ -14,7 +14,7 @@
 ! |     desc | Rofi(1) configuration file                                      |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Mon Jan 16 2017 17:19:23 PST -0800                              |
+! | modified | Mon Jun 12 2017 08:23:53 PDT -0700                              |
 ! `----------------------------------------------------------------------------'
 
 
@@ -52,4 +52,7 @@ rofi.padding: 2
 
 ! Terminal to use
 rofi.terminal: urxvt
+
+! Monitor id to show on
+rofi.m: 1
 
