@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jun 14 2017 11:22:19 PDT -0700                              |
+# | modified | Wed Jun 14 2017 11:25:16 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -234,7 +234,7 @@
 
 
     # redshift -- adjust color temp of display according to time of day {{{2
-    if_cmd_exists redshift &
+    #if_cmd_exists redshift &
 
 
     # remind -- a sophisticated reminder service
