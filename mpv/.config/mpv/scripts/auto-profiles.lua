@@ -1,0 +1,1 @@
+../../../.submodules/wm4-mpv-scripts/auto-profiles.lua
