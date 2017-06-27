@@ -10,3 +10,6 @@
 [submodule "rofi/.submodules/gruvbox-rofi"]
 	path = rofi/.submodules/gruvbox-rofi
 	url = https://github.com/bardisty/gruvbox-rofi
+[submodule "mpv/.submodules/wm4-mpv-scripts"]
+	path = mpv/.submodules/wm4-mpv-scripts
+	url = https://github.com/wm4/mpv-scripts
