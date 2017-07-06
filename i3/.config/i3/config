@@ -15,7 +15,7 @@
 # |     desc | i3(1) window manager configuration (Airblader fork; gaps-next)  |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Tue Jan 24 2017 10:34:41 PST -0800                              |
+# | modified | Thu Jul 06 2017 14:44:19 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -59,7 +59,8 @@
     # Font for window titles
     #     * Will also be used by the status bar unless a different font is
     #       used in the `bar {}` block
-    font pango:Gohu GohuFont 14px
+    #font pango:Gohu GohuFont 14px
+    font pango:Iosevka Term 14px
 
     # Set window border size
     for_window [class="^.*"] border pixel 2

@@ -14,7 +14,7 @@
 ! |     desc | Rofi(1) configuration file                                      |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Mon Jun 12 2017 08:23:53 PDT -0700                              |
+! | modified | Thu Jul 06 2017 14:41:57 PDT -0700                              |
 ! `----------------------------------------------------------------------------'
 
 
@@ -42,7 +42,8 @@ rofi.fixed-num-lines: false
 rofi.separator-style: solid
 
 ! Font to use
-rofi.font: Gohu GohuFont 14
+!rofi.font: Gohu GohuFont 14
+rofi.font: Iosevka Term 12
 
 ! Border width
 rofi.bw: 2

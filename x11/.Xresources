@@ -14,7 +14,7 @@
 ! |     desc | Configuration parameters for X client applications              |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Fri Jan 27 2017 07:49:20 PST -0800                              |
+! | modified | Mon Jun 05 2017 08:53:50 PDT -0700                              |
 ! '----------------------------------------------------------------------------'
 
 
@@ -98,9 +98,17 @@
 
 !       GohuFont
 !       http://font.gohu.org/
-        URxvt*font: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
-        URxvt*boldFont: -gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
-        URxvt*italicFont: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+!       URxvt*font: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+!       URxvt*boldFont: -gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
+!       URxvt*italicFont: -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+
+!       Iosevka
+!       https://be5invis.github.io/Iosevka/
+!       `make custom-config design='cv01 cv03 cv08 cv13 cv17 cv19 cv21 cv31 \
+!        cv37 term' upright='cv11' italic='cv12' oblique='cv12' && make custom`
+        URxvt*font: xft:Iosevka Term:style=Regular:pixelsize=16
+        URxvt*boldFont: xft:Iosevka Term:style=Bold:pixelsize=16
+        URxvt*italicFont: xft:Iosevka Term:style=Italic:pixelsize=16
 
 
 
