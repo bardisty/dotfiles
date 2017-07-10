@@ -1,6 +1,7 @@
 # dotfiles
 
-> Linux config files (beets, cmus, GnuPG, i3, mpv, ranger, rofi, sxhkd, X11)
+> Linux config files (beets, cmus, dunst, git, GnuPG, i3, mpv, ranger, rofi,
+> sxhkd, X11)
 
 ```text
                    dP            dP   .8888b oo dP
