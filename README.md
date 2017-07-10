@@ -15,6 +15,7 @@
 |------------------------------------------------------------------------------|
 |    beets | music tagger & library organizer                          beet(1) |
 |     cmus | c* music player                                           cmus(1) |
+|    dunst | notification daemon                                      dunst(1) |
 |      git | revision control system                                    git(1) |
 |    gnupg | gnu privacy guard suite         gpg2(1), gpg-agent(1), dirmngr(8) |
 |       i3 | window manager                                              i3(1) |
