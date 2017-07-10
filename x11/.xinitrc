@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jun 14 2017 11:25:16 PDT -0700                              |
+# | modified | Mon Jul 10 2017 00:54:46 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -223,18 +223,6 @@
     # compton -- composite manager {{{2
     # https://github.com/chjj/compton
     if_cmd_exists compton -b --config "${HOME}/.config/compton.conf"
-
-
-    # jackdbus -- JACK audio connection kit {{{2
-    if_cmd_exists jack_control start &
-
-
-    # nm-applet -- NetworkManager systray applet {{{2
-    #if_cmd_exists nm-applet &
-
-
-    # redshift -- adjust color temp of display according to time of day {{{2
-    #if_cmd_exists redshift &
 
 
     # remind -- a sophisticated reminder service
