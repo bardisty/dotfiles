@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jul 12 2017 01:04:40 PDT -0700                              |
+# | modified | Wed Jul 12 2017 01:09:19 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -229,7 +229,7 @@
     if_cmd_exists compton -b --config "${HOME}/.config/compton.conf"
 
 
-    # remind -- a sophisticated reminder service
+    # remind -- a sophisticated reminder service {{{2
     if_cmd_exists remind -z -k"notify-send -u critical 'REMINDER' '%s'" "${HOME}/.reminders" &
 
 
