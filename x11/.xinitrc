@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Mon Jul 10 2017 00:54:46 PDT -0700                              |
+# | modified | Wed Jul 12 2017 01:04:40 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -145,6 +145,10 @@
     # Set wallpaper with feh(1) {{{2
     FEHBG="${HOME}/.fehbg"
     [ -x "$FEHBG" ] && "$FEHBG" &
+
+
+    # Display a pop up of my reminders for the day {{{2
+    zenity --info --text="$(remind -q "${HOME}/.reminders")" &
 
 
 
