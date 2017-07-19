@@ -10,7 +10,7 @@
 [gpg]
 	program = gpg2
 [status]
-	submodulesummary = 1
+	submodulesummary = true
 	showUntrackedFiles = all
 [merge]
 	conflictStyle = diff3
