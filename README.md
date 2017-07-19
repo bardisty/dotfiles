@@ -32,13 +32,13 @@
 
 ## Quickstart
 
-1. Clone the repository into your home directory:
+1.  Clone the repository into your home directory:
 
     `git clone --recurse-submodules --jobs 4 https://github.com/bardisty/dotfiles ~/dotfiles`
 
-2. `cd` into the repository:
+2.  `cd` into the repository:
 
-   `cd ~/dotfiles`
+    `cd ~/dotfiles`
 
 3.  Checkout the master branch on all submodules:
 
