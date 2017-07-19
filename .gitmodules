@@ -5,12 +5,16 @@
 [submodule "mpv/.submodules/autosub"]
 	path = mpv/.submodules/autosub
 	url = https://gist.github.com/ce3fb37e775dbd15c698.git
+	branch = master
 [submodule "x11/.submodules/gruvbox-contrib"]
 	path = x11/.submodules/gruvbox-contrib
 	url = https://github.com/morhetz/gruvbox-contrib
+	branch = master
 [submodule "rofi/.submodules/gruvbox-rofi"]
 	path = rofi/.submodules/gruvbox-rofi
 	url = https://github.com/bardisty/gruvbox-rofi
+	branch = master
 [submodule "mpv/.submodules/wm4-mpv-scripts"]
 	path = mpv/.submodules/wm4-mpv-scripts
 	url = https://github.com/wm4/mpv-scripts
+	branch = master
