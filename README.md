@@ -34,7 +34,7 @@
 
 1. Clone the repository into your home directory:
 
-   `git clone --recursive https://github.com/bardisty/dotfiles ~/dotfiles`
+    `git clone --recurse-submodules --jobs 4 https://github.com/bardisty/dotfiles ~/dotfiles`
 
 2. `cd` into the repository:
 
