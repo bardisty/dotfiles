@@ -21,7 +21,8 @@ All shaders are one pass only (`2x` upscaling). For `4x` upscaling, trigger
 the same shader twice:
 
 ```text
-opengl-shaders="~~/shaders/superxbr--all--1.3-sharpness.hook,~~/shaders/superxbr--all--1.3-sharpness.hook"
+opengl-shaders-append="~~/shaders/superxbr--all--1.3-sharpness.hook"
+opengl-shaders-append="~~/shaders/superxbr--all--1.3-sharpness.hook"
 ```
 
 See the [bjin/mpv-prescalers](https://github.com/bjin/mpv-prescalers)
