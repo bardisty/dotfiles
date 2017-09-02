@@ -18,3 +18,12 @@
 	path = mpv/.submodules/wm4-mpv-scripts
 	url = https://github.com/wm4/mpv-scripts
 	branch = master
+[submodule "mpv/.submodules/mpv-webm"]
+	path = mpv/.submodules/mpv-webm
+	url = https://github.com/ElegantMonkey/mpv-webm.git
+[submodule "mpv/.submodules/mfcc64-mpv-scripts"]
+	path = mpv/.submodules/mfcc64-mpv-scripts
+	url = https://github.com/mfcc64/mpv-scripts.git
+[submodule "mpv/.submodules/wiiaboo-mpv-scripts"]
+	path = mpv/.submodules/wiiaboo-mpv-scripts
+	url = https://github.com/wiiaboo/mpv-scripts.git
