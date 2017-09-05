@@ -15,7 +15,7 @@
 # |     desc | i3(1) window manager configuration (Airblader fork; gaps-next)  |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Thu Jul 06 2017 14:44:19 PDT -0700                              |
+# | modified | Mon Sep 04 2017 18:41:36 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -260,7 +260,9 @@
 
 
     # Set default window mode to float
-    for_window [class="(?i)viewnior|(?i)feh|(?i)mplayer|(?i)mpv|(?i)steam|(?i)gsimplecal|(?i)gtk-gnash|(?i)qjackctl"] floating enable
+    for_window [class="(?i)viewnior|(?i)feh|(?i)mplayer|(?i)mpv|(?i)steam|\
+                (?i)gsimplecal|(?i)gtk-gnash|(?i)qjackctl|(?i)xmessage|\
+                (?i)pinentry"] floating enable
 
     # Force floating mode for dialogs
     for_window [window_role="pop-up|task_dialog"] floating enable
