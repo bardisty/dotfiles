@@ -15,7 +15,7 @@
 # |     desc | i3(1) window manager configuration (Airblader fork; gaps-next)  |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Mon Sep 04 2017 18:41:36 PDT -0700                              |
+# | modified | Mon Sep 04 2017 18:44:49 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -23,13 +23,13 @@
 # _____________
 
 
-    # 1 General                   :general:
-    # 2 Colors                    :colors:
-    # 3 Gaps                      :gaps:
-    # 4 Resize Window             :resize-window:
-    # 5 Status Bar                :status-bar:
-    # 6 Window Rules              :window-rules:
-    # 7 Workspaces                :workspaces:
+    # 1 General ................................................ :general:
+    # 2 Colors ................................................. :colors:
+    # 3 Gaps ................................................... :gaps:
+    # 4 Resize Window .......................................... :resize-window:
+    # 5 Status Bar ............................................. :status-bar:
+    # 6 Window Rules ........................................... :window-rules:
+    # 7 Workspaces ............................................. :workspaces:
 
 
 
