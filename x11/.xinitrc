@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jul 12 2017 01:09:19 PDT -0700                              |
+# | modified | Fri Dec 15 2017 10:08:52 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -148,7 +148,7 @@
 
 
     # Display a pop up of my reminders for the day {{{2
-    zenity --info --text="$(remind -q "${HOME}/.reminders")" &
+    zenity --width=400 --info --text="$(remind -q "${HOME}/.reminders")" &
 
 
 
