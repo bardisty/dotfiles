@@ -14,7 +14,7 @@
 ! |     desc | Configuration parameters for X client applications              |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Mon Jun 05 2017 08:53:50 PDT -0700                              |
+! | modified | Sat Jan 13 2018 07:36:12 PST -0800                              |
 ! '----------------------------------------------------------------------------'
 
 
@@ -22,13 +22,13 @@
 ! _____________
 
 
-!   1 URxvt                   :urxvt:
-!   .. 1.1 Colors                :urxvt:colors:
-!   .. 1.2 Cursor                :urxvt:cursor:
-!   .. 1.3 Extensions            :urxvt:extensions:
-!   .. 1.4 Text                  :urxvt:text:
-!   2 Xcursor                 :xcursor:
-!   3 Xft                     :xft:
+!   1 URxvt .............................................. :urxvt:
+!      1.1 Colors ........................................... :urxvt:colors:
+!      1.2 Cursor ........................................... :urxvt:cursor:
+!      1.3 Extensions ....................................... :urxvt:extensions:
+!      1.4 Text ............................................. :urxvt:text:
+!   2 Xcursor ............................................ :xcursor:
+!   3 Xft ................................................ :xft:
 
 
 
@@ -55,7 +55,7 @@
 
 
 
-!   2.1 Colors {{{2                                               :urxvt:colors:
+!   1.1 Colors {{{2                                               :urxvt:colors:
 !   ~~~~~~~~~~~~~~~
 
 !       Gruvbox color scheme
@@ -72,7 +72,7 @@
 
 
 
-!   2.2 Cursor {{{2                                               :urxvt:cursor:
+!   1.2 Cursor {{{2                                               :urxvt:cursor:
 !   ~~~~~~~~~~~~~~~
 
 !       Blink the cursor
@@ -83,7 +83,7 @@
 
 
 
-!   2.3 Extensions {{{2                                       :urxvt:extensions:
+!   1.3 Extensions {{{2                                       :urxvt:extensions:
 !   ~~~~~~~~~~~~~~~~~~~
 
 !       Clickable URLs
@@ -93,7 +93,7 @@
 
 
 
-!   2.4 Text {{{2                                                   :urxvt:text:
+!   1.4 Text {{{2                                                   :urxvt:text:
 !   ~~~~~~~~~~~~~
 
 !       GohuFont
