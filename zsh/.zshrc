@@ -15,7 +15,7 @@
 # |     desc | Zsh(1) shell configuration                                      |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jan 17 2018 08:23:41 PST -0800                              |
+# | modified | Wed Jan 17 2018 09:52:16 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -187,25 +187,21 @@
     # Log commands to daily log files
     #     * Used in `precmd()` function. See :window-titles: section.
     history_logs() {
-      if [[ "$(hostname)" == *dsk* ]] || [[ "$(hostname)" == *lap* ]] || [[ "$(hostname)" == *linuxiso* ]]; then
+      # Where to store history log files
+      local LOG_DIR="${HOME}/var/log/history"
 
-        # Where to store history log files
-        local LOG_DIR="${HOME}/var/log/history"
+      # Original source: https://news.ycombinator.com/item?id=11806767
+      local LOG_CMD='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d %H:%M:%S") $(pwd) $(fc -l -1)" >>! "$LOG_DIR"/history-$(date "+%Y-%m-%d").log; fi'
 
-        # Original source: https://news.ycombinator.com/item?id=11806767
-        local LOG_CMD='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d %H:%M:%S") $(pwd) $(fc -l -1)" >>! "$LOG_DIR"/history-$(date "+%Y-%m-%d").log; fi'
-
-        if [[ -d "$LOG_DIR" ]]; then
-          eval "$LOG_CMD"
+      if [[ -d "$LOG_DIR" ]]; then
+        eval "$LOG_CMD"
+      else
+        if ! mkdir -p "$LOG_DIR"; then
+          printf %s\\n "Error: could not create history logs directory! \
+            Ensure the `LOG_DIR` variable in `.zshrc` is set to the right path."
         else
-          if ! mkdir -p "$LOG_DIR"; then
-            printf %s\\n "Error: could not create history logs directory! \
-              Ensure the `LOG_DIR` variable in `.zshrc` is set to the right path."
-          else
-            eval "$LOG_CMD"
-          fi
+          eval "$LOG_CMD"
         fi
-
       fi
     }
 
