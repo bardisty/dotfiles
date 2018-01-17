@@ -14,7 +14,7 @@
 # |     desc | Zsh shell command aliases                                       |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jan 17 2018 08:54:06 PST -0800                              |
+# | modified | Wed Jan 17 2018 09:54:46 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -83,10 +83,10 @@
 
     alias j="z"
     alias c="z"
-    alias ct="f -e cat"
-    alias m="f -e mpv"
+    alias ct="fasd -f -e cat"
+    alias m="fasd -f -e mpv"
     alias o="fasd -a -e mimeo"
-    alias v="f -e vim"
+    alias v="fasd -f -e vim"
 
 
 
