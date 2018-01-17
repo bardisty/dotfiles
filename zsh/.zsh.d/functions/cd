@@ -1,0 +1,16 @@
+# Run `ls` after issuing `cd` commands.
+#
+# Arguments:
+#   $1 (str): Working directory to change to.
+#
+# STDOUT:
+#   Working directory contents.
+#
+# Examples:
+#   cd ~/tmp
+#   cd /mnt/data
+#
+cd() {
+  builtin cd $@ && ls -CF --color=always
+}
+

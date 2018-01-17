@@ -1,0 +1,14 @@
+# Convert string to/from ROT13.
+#
+# Arguments:
+#   $1 (str): String to convert.
+#
+# STDOUT:
+#   ROT13 converted string.
+#
+# Examples:
+#   rot13 'hello world'
+#   rot13 'uryyb jbeyq'
+#
+echo "$1" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+

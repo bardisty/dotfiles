@@ -1,0 +1,10 @@
+# Open web browser and search DuckDuckGo for word definitions.
+#
+# Arguments:
+#   $1 (str): Word to define.
+#
+# Examples:
+#   define bibble
+#   define pronk
+#
+$BROWSER "https://duckduckgo.com/?q=define+${1}"

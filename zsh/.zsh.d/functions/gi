@@ -1,0 +1,15 @@
+# Grab a `.gitignore` file template.
+#
+# Arguments:
+#   $1 (str): Name of `.gitignore` template.
+#
+# STDOUT:
+#   The `.gitignore` file contents if a template is found.
+#   Undefined error if no template exists by the given name.
+#
+# Examples:
+#   gi python
+#   gi ruby > .gitignore
+#
+curl -L -s https://www.gitignore.io/api/$@ ;
+
