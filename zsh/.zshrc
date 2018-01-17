@@ -15,7 +15,7 @@
 # |     desc | Zsh(1) shell configuration                                      |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jan 17 2018 09:52:16 PST -0800                              |
+# | modified | Wed Jan 17 2018 10:31:17 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -46,7 +46,7 @@
 
     # Install zplug if it's not installed
     if [[ ! -d $ZPLUG_HOME ]]; then
-      git clone https://github.com/zplug/zplug $ZPLUG_HOME
+      curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
     fi
 
     # Init zplug
