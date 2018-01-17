@@ -15,7 +15,7 @@
 # |     desc | Zsh(1) shell configuration                                      |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Wed Jan 17 2018 10:31:17 PST -0800                              |
+# | modified | Wed Jan 17 2018 10:37:22 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -61,9 +61,17 @@
     # Zsh theme
     zplug "${HOME}/.zsh.d/themes", from:local, as:theme, use:"steeef-mod.zsh-theme"
 
+    # Note:
+    #
+    #   Oh-My-Zsh libs and plugins will fail to clone/load if your
+    #   global git config has `transfer.fsckObjects` set to `true`.
+    #
+    #   Set it to `false` during zplug's initial install and anytime you run
+    #   `zplug update`
+
     # Oh-My-Zsh libs
-    zplug "lib/clipboard", from:oh-my-zsh
     zplug "lib/completion", from:oh-my-zsh
+    zplug "lib/clipboard", from:oh-my-zsh
     zplug "lib/git", from:oh-my-zsh, if:"(( $+commands[git] ))"
     zplug "lib/grep", from:oh-my-zsh
     zplug "lib/misc", from:oh-my-zsh
