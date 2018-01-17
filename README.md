@@ -27,6 +27,7 @@
 |     rofi | run launcher, window switcher, etc.                       rofi(1) |
 |    sxhkd | simple x hotkey daemon                                   sxhkd(1) |
 |      x11 | x window system                        x(7), xinit(1), xserver(1) |
+|      zsh | z shell                                                 zshall(1) |
 `------------------------------------------------------------------------------'
 ```
 
