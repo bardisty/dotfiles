@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Fri Dec 15 2017 10:08:52 PST -0800                              |
+# | modified | Fri Jan 19 2018 05:02:00 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -63,10 +63,6 @@
       done
       unset f
     fi
-
-
-    # shellcheck source=/home/bah/.xprofile
-    [ -f .xprofile ] && . "${HOME}/.xprofile"
 
 
 
