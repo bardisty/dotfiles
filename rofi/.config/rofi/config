@@ -14,17 +14,15 @@
 ! |     desc | Rofi(1) configuration file                                      |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Thu Jul 06 2017 14:41:57 PDT -0700                              |
+! | modified | Mon Feb 12 2018 01:35:47 PST -0800                              |
 ! `----------------------------------------------------------------------------'
 
 
-! rofi - A window switcher, run launcher, ssh dialog, and dmenu replacement
-!
-! Run `rofi -dump-Xresources` for a list of rofi configuration directives.
+! Gruvbox theme
+rofi.theme: ~/.config/rofi/themes/gruvbox-dark.rasi
 
-
-! Gruvbox color scheme
-#include "/home/bah/.config/rofi/themes/gruvbox-dark.theme"
+! Font
+rofi.font: Iosevka Term 12
 
 ! Window width
 rofi.width: 24
@@ -37,19 +35,6 @@ rofi.columns: 1
 
 ! Always show number of lines
 rofi.fixed-num-lines: false
-
-! Separator style
-rofi.separator-style: solid
-
-! Font to use
-!rofi.font: Gohu GohuFont 14
-rofi.font: Iosevka Term 12
-
-! Border width
-rofi.bw: 2
-
-! Padding
-rofi.padding: 2
 
 ! Terminal to use
 rofi.terminal: urxvt
