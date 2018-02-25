@@ -14,7 +14,7 @@
 # |     desc | Build the PATH environment variable                             |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Mon Jan 16 2017 03:21:19 PST -0800                              |
+# | modified | Sun Feb 25 2018 09:21:48 PST -0800                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -70,7 +70,7 @@ fi
 # Add RubyGems bin directory to $PATH if:
 #     * RubyGems bin directory exists
 #     * RubyGems bin directory does not already exist in the $PATH
-RUBYGEMS_BIN="${HOME}/.gem/ruby/2.4.0/bin"
+RUBYGEMS_BIN="${HOME}/.gem/ruby/2.5.0/bin"
 if [ -d "$RUBYGEMS_BIN" ]; then
   if ! exists_in_path "$RUBYGEMS_BIN"; then
     export PATH="${PATH}:${RUBYGEMS_BIN}"
