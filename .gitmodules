@@ -1,7 +1,3 @@
-[submodule "mpv/.submodules/mpv-stats"]
-	path = mpv/.submodules/mpv-stats
-	url = https://github.com/Argon-/mpv-stats.git
-	branch = master
 [submodule "x11/.submodules/gruvbox-contrib"]
 	path = x11/.submodules/gruvbox-contrib
 	url = https://github.com/morhetz/gruvbox-contrib
