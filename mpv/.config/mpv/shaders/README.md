@@ -11,18 +11,18 @@ scripts that generate user shaders for prescaling in mpv(1).
 
 ## Usage
 
-Add `opengl-shaders` option to `mpv.conf`:
+Add `glsl-shaders` option to `mpv.conf`:
 
 ```text
-opengl-shaders="~~/shaders/super-xbr--rgb--1.3-sharpness.hook"
+glsl-shaders="~~/shaders/super-xbr--rgb--1.3-sharpness.hook"
 ```
 
 All shaders are one pass only (`2x` upscaling). For `4x` upscaling, trigger
 the same shader twice:
 
 ```text
-opengl-shaders-append="~~/shaders/superxbr--rgb--1.3-sharpness.hook"
-opengl-shaders-append="~~/shaders/superxbr--rgb--1.3-sharpness.hook"
+glsl-shaders-append="~~/shaders/superxbr--rgb--1.3-sharpness.hook"
+glsl-shaders-append="~~/shaders/superxbr--rgb--1.3-sharpness.hook"
 ```
 
 See the [bjin/mpv-prescalers](https://github.com/bjin/mpv-prescalers)
