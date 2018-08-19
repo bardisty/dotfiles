@@ -15,7 +15,7 @@
 # |     desc | X Window System initializer                                     |
 # |   author | bardisty <b@bah.im>                                             |
 # |   source | https://github.com/bardisty/dotfiles                            |
-# | modified | Fri Jan 19 2018 05:02:00 PST -0800                              |
+# | modified | Sat Aug 18 2018 23:48:45 PDT -0700                              |
 # `----------------------------------------------------------------------------'
 
 
@@ -144,7 +144,7 @@
 
 
     # Display a pop up of my reminders for the day {{{2
-    zenity --width=400 --info --text="$(remind -q "${HOME}/.reminders")" &
+    zenity --width=400 --info --text="$(remind -q "${HOME}/.config/remind/reminders.rem")" &
 
 
 
@@ -226,7 +226,7 @@
 
 
     # remind -- a sophisticated reminder service {{{2
-    if_cmd_exists remind -z -k"notify-send -u critical 'REMINDER' '%s'" "${HOME}/.reminders" &
+    if_cmd_exists remind -z -k"notify-send -u critical 'REMINDER' '%s'" "${HOME}/.config/remind/reminders.rem" &
 
 
     # sxhkd -- simple X hotkey daemon {{{2
