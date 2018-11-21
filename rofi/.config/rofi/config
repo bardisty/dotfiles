@@ -14,7 +14,7 @@
 ! |     desc | Rofi(1) configuration file                                      |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Mon Feb 12 2018 01:35:47 PST -0800                              |
+! | modified | Wed Nov 21 2018 01:37:24 PST -0800                              |
 ! `----------------------------------------------------------------------------'
 
 
@@ -22,7 +22,7 @@
 rofi.theme: ~/.config/rofi/themes/gruvbox-dark.rasi
 
 ! Font
-rofi.font: Iosevka Term 12
+rofi.font: Iosevka Custom 12
 
 ! Window width
 rofi.width: 24
