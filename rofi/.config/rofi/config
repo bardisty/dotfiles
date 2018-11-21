@@ -14,7 +14,7 @@
 ! |     desc | Rofi(1) configuration file                                      |
 ! |   author | bardisty <b@bah.im>                                             |
 ! |   source | https://github.com/bardisty/dotfiles                            |
-! | modified | Wed Nov 21 2018 01:37:24 PST -0800                              |
+! | modified | Wed Nov 21 2018 01:38:54 PST -0800                              |
 ! `----------------------------------------------------------------------------'
 
 
@@ -31,7 +31,7 @@ rofi.width: 24
 rofi.lines: 12
 
 ! Number of columns
-rofi.columns: 1
+rofi.columns: 3
 
 ! Always show number of lines
 rofi.fixed-num-lines: false
