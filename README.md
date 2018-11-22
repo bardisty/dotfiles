@@ -41,11 +41,7 @@
 
     `cd ~/dotfiles`
 
-3.  Checkout the master branch on all submodules:
-
-    `git submodule foreach --recursive 'git checkout master'`
-
-4.  Use [GNU Stow](https://www.gnu.org/software/stow/) to create and manage
+3.  Use [GNU Stow](https://www.gnu.org/software/stow/) to create and manage
     the required symlinks:
 
     `stow <directory>` e.g., `stow mpv`
