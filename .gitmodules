@@ -6,10 +6,6 @@
 	path = rofi/.submodules/gruvbox-rofi
 	url = https://github.com/bardisty/gruvbox-rofi
 	branch = master
-[submodule "mpv/.submodules/wm4-mpv-scripts"]
-	path = mpv/.submodules/wm4-mpv-scripts
-	url = https://github.com/wm4/mpv-scripts
-	branch = master
 [submodule "mpv/.submodules/mpv-webm"]
 	path = mpv/.submodules/mpv-webm
 	url = https://github.com/ElegantMonkey/mpv-webm.git
