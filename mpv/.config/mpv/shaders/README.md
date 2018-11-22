@@ -7,6 +7,7 @@ scripts that generate user shaders for prescaling in mpv(1).
 
 1. `git clone https://github.com/bjin/mpv-prescalers.git`
 -  `cd mpv-prescalers`
+-  `git checkout source`
 -  `./superxbr.py --target=rgb --sharpness=1.3 > ~/.config/mpv/shaders/super-xbr--rgb--1.3-sharpness.hook`
 
 ## Usage
